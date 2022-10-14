@@ -1,0 +1,57 @@
+/* NAVBAR SECUNDARIO*/
+
+.navbar__secundario {
+    height: 60px;
+    background-color: $secundario;
+    
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        font-family: $font1;
+        text-transform: uppercase;
+        padding: 15px 15px;
+        font-size: 10.5px;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        i {
+            color: $terciario;
+            font-size: 15px;
+            padding-right: 2px;
+        }
+
+        .link__menu {
+            padding: 5px;
+            margin-left: 4px;
+            margin-right: 4px;
+            background-color: $primario;
+            letter-spacing: 2px;
+            border-radius: 5px;
+        }
+
+    }
+}
+
+
+@media (min-width:992px) {
+    .navbar__secundario {
+        
+        ul {
+            
+            justify-content: flex-end;
+            padding: 15px 100px;
+            font-size: 11px;
+    
+            .link__menu {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+    
+        }
+    }
+}

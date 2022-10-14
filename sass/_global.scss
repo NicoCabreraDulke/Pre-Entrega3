@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$primario: #0a151f;
+$secundario: #112333;
+$terciario: #f8b233;
+$oscuro: #04070a;
+$font1 : 'Prompt',
+sans-serif;
+$font2 : 'Roboto',
+sans-serif;
+
+.primario {
+    background-color: $primario !important;
+}
+
+.secundario {
+    background-color: $secundario !important;
+}
+
+.container-fluid {
+    padding-right: 0!important;
+    padding-left: 0!important;
+}

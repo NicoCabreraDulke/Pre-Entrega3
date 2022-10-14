@@ -1,4 +1,24 @@
-* {
-    margin: 0;
-    padding: 0;
+@import "global";
+@import "reboot";
+@import "navbar";
+@import "fonts";
+@import "navsecundario";
+
+
+.section__principal {
+    background-color: darkgray;
+}
+
+@media (min-width:992px) {
+
+    .section__principal {
+        height: 500px;
+        margin: 50px 100px;
+
+
+        .carousel {
+            height: 400px;
+            width: 600px;
+        }
+    }
 }

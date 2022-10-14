@@ -1,0 +1,109 @@
+/*NAVBAR FIRST MOBILE*/
+
+
+    .navbar {
+    height: 80px;
+    padding: 25px 10px;
+    z-index: 10000!important;
+
+    .nav-link {
+        color: #fff !important;
+        font-family: 'Prompt', sans-serif;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 18px;
+        transition: 0.5s ease;
+        padding: 0.8rem 0.4rem !important;
+    }
+
+    .nav-link:hover {
+        background-color: $secundario;
+    }
+
+    .navbar-toggler {
+        font-size: 1rem;
+        border: 2px solid #f8b233 !important;
+    }
+}
+
+.navbar-nav {
+    background-color: $primario;
+    border-bottom: 2px solid #f8b233 !important;
+
+    .dropdown-menu {
+        background-color: $secundario;
+        border: none;
+        border-radius: 0;
+        border-top: 3px solid $primario !important;
+
+        .dropdown-item {
+            color: #fff;
+            font-family: 'Prompt', sans-serif;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.active {
+    color: darkgray !important;
+}
+
+header img {
+    height: 50px;
+}
+
+/*NAVBAR DESKTOP*/
+
+@media (min-width:992px) {
+
+        .navbar {
+        height: 100px;
+        padding: 25px 100px;
+        
+
+        .nav-link {
+            border-right: 2px solid $terciario;
+            font-size: 14px;
+            padding: .1rem 0.4rem !important;
+        }
+
+        .dropdown-menu {
+            display: none;
+        }
+
+        .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu {
+            margin-top: 0;
+        }
+
+        img {
+            height: 70px;
+        }
+    }
+
+    .navbar-nav {
+        background-color: $primario;
+        border-bottom: 0px solid transparent !important;
+
+        .dropdown-menu {
+            background-color: $primario;
+            border: none;
+            border-bottom: 2px solid $terciario;
+
+            .dropdown-item {
+                color: #fff;
+                font-family: 'Roboto', sans-serif;
+                text-transform: none;
+            }
+
+            .dropdown-item:hover {
+                background-color: $secundario;
+            }
+            
+        }
+    }
+}
