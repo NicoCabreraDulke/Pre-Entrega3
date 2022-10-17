@@ -195,7 +195,6 @@ span:nth-child(2) {
 .section__principal {
   background-color: #ddd;
   height: auto;
-  padding-bottom: 10px;
 }
 .section__principal .carousel-caption {
   position: absolute;
@@ -227,52 +226,121 @@ span:nth-child(2) {
   -webkit-animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
           animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
-.section__principal .card {
+.section__principal .tarjetas__ingreso {
+  background-color: #f8b233;
+  padding: 15px;
+}
+.section__principal .tarjetas__ingreso .card {
   font-family: "Roboto", sans-serif;
   border-radius: 20px;
-  margin: 15px;
+  padding: 15px;
+  margin-bottom: 10px;
   color: #112333;
   border: 2px solid #f8b233 !important;
 }
-.section__principal .card .btn {
+.section__principal .tarjetas__ingreso .card .btn {
   border: none;
   color: #fff;
 }
-.section__principal .card h2 {
+.section__principal .tarjetas__ingreso .card h2 {
   font-family: "Prompt", sans-serif;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
 }
-.section__principal .card i {
+.section__principal .tarjetas__ingreso .card i {
   color: #112333;
   font-size: 30px;
+}
+.section__principal .redes {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a151f;
+}
+.section__principal .redes .boton__redes {
+  width: 65px;
+  height: 65px;
+  line-height: 50px;
+  font-size: 25px;
+  margin: 15px;
+  padding: 0;
+  border: 3px solid #f8b233;
+  color: #fff;
+  background-color: #0a151f;
+  border-radius: 50%;
+  min-width: 55px;
+  transition: 550ms ease;
+}
+.section__principal .redes .boton__redes:hover {
+  font-size: 26px;
+  border: 3px solid #112333;
+  color: #112333;
 }
 
 .degradado {
   background-image: linear-gradient(to bottom, rgba(61, 61, 61, 0), rgba(0, 0, 0, 0.959));
 }
 
-@media (min-width: 992px) {
-  .container-fluid {
-    grid-area: carousel;
-  }
-  .card-cuina {
-    grid-area: cuina;
-  }
-  .card-cadete {
-    grid-area: cadete;
-  }
+@media (min-width: 720px) {
   .section__principal {
     background-color: #fff;
-    height: 428.56px;
-    margin: 50px 100px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "carousel cuina" "carousel cadete";
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas: "carousel carousel" "tarjetas redes" "tarjetas redes";
   }
-  .section__principal .carousel {
-    height: 400px;
-    width: 600px;
+  .section__principal .container-fluid {
+    grid-area: carousel;
+  }
+  .section__principal .tarjetas__ingreso {
+    grid-area: tarjetas;
+    background-color: #f8b233;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section__principal .tarjetas__ingreso .card {
+    width: 95%;
+  }
+  .section__principal .redes {
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 920px) {
+  .section__principal {
+    margin: 50px 100px;
+    grid-template-columns: 4fr 4fr 0.5fr;
+    grid-template-areas: "carousel tarjetas redes" "carousel tarjetas redes";
+  }
+  .section__principal .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section__principal .tarjetas__ingreso {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section__principal .tarjetas__ingreso .card {
+    width: 95%;
+  }
+  .section__principal .redes {
+    background-color: #fff;
+    padding: 0px;
+  }
+  .section__principal .d-block,
+.section__principal .w-100 {
+    min-height: 413.86px;
+    height: auto;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }/*# sourceMappingURL=styles.css.map */

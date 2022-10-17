@@ -12,7 +12,6 @@
 
     background-color: #ddd;
     height: auto;
-    padding-bottom: 10px;
 
 
     .carousel-caption {
@@ -45,68 +44,154 @@
         }
     }
 
-    .card {
-        font-family: $font2;
-        border-radius: 20px;
-        margin: 15px;
-        color: $secundario;
-        border: 2px solid #f8b233 !important;
-
-        .btn {
-            border: none;
-            color: #fff
-        }
-
-        h2 {
-            font-family: $font1;
-            font-size: 20px;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-
-        i {
+    .tarjetas__ingreso {
+        background-color: $terciario;
+        padding: 15px;
+        .card {
+            font-family: $font2;
+            border-radius: 20px;
+            padding: 15px;
+            margin-bottom: 10px;
             color: $secundario;
-            font-size: 30px;
+            border: 2px solid #f8b233 !important;
+
+            .btn {
+                border: none;
+                color: #fff
+            }
+
+            h2 {
+                font-family: $font1;
+                font-size: 20px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            i {
+                color: $secundario;
+                font-size: 30px;
+            }
         }
     }
+
+
+    .redes {
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primario;
+
+        .boton__redes {
+            width: 65px;
+            height: 65px;
+            line-height: 50px;
+            font-size: 25px;
+            margin: 15px;
+            padding: 0;
+            border: 3px solid $terciario;
+            color: #fff;
+            background-color: $primario;
+            border-radius: 50%;
+            min-width: 55px;
+            transition: 550ms ease;
+        }
+
+        .boton__redes:hover {
+            font-size: 26px;
+            border: 3px solid $secundario;
+            color: $secundario;
+        }
+    }
+
+
+
 }
 
 .degradado {
     background-image: linear-gradient(to bottom, rgba(61, 61, 61, 0), rgba(0, 0, 0, 0.959));
 }
 
+@media (min-width:720px) {
 
 
-@media (min-width:992px) {
-    
-    .container-fluid {
-        grid-area: carousel;
-    }
-
-    .card-cuina {
-        grid-area: cuina;
-    }
-
-    .card-cadete {
-        grid-area: cadete;
-    }
 
     .section__principal {
         background-color: #fff;
-        height: 428.56px;
-        margin: 50px 100px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 4fr 1fr;
         grid-template-areas:
-            "carousel cuina"
-            "carousel cadete";
+            "carousel carousel"
+            "tarjetas redes"
+            "tarjetas redes";
 
-
-
-        .carousel {
-            height: 400px;
-            width: 600px;
-
+        .container-fluid {
+            grid-area: carousel;
         }
+
+        .tarjetas__ingreso {
+            grid-area: tarjetas;
+            background-color: #f8b233;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .card {
+                width: 95%;
+            }
+        }
+
+        .redes {
+            grid-area: redes;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media (min-width:920px) {
+
+
+
+    .section__principal {
+        margin: 50px 100px;
+        grid-template-columns: 4fr 4fr 0.5fr;
+        grid-template-areas:
+            "carousel tarjetas redes"
+            "carousel tarjetas redes";
+
+        .container-fluid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tarjetas__ingreso {
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .card {
+                width: 95%;
+            }
+        }
+
+        .redes {
+        background-color: #fff;
+        padding: 0px;
+        }
+
+        .d-block,
+        .w-100 {
+            min-height: 413.86px;
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+        }
+
+
     }
 }
