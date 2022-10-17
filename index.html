@@ -76,12 +76,18 @@
 
     <!-- NAVBAR SECUNDARIO -->
 
-    <section class="navbar__secundario">
+    <section class="navbar__secundario shadow-lg">
 
         <ul>
-            <a href="#"><li class="link__menu"><i class="fa-solid fa-book"></i>Biblioteca</li></a>
-            <a href="#"><li class="link__menu"><i class="fa-solid fa-anchor"></i>Museo</li></a>
-            <a href="#"><li class="link__menu"><i class="fa-solid fa-chalkboard-user"></i>E-lerning</li></a>
+            <a href="#">
+                <li class="link__menu"><i class="fa-solid fa-book"></i>Biblioteca</li>
+            </a>
+            <a href="#">
+                <li class="link__menu"><i class="fa-solid fa-anchor"></i>Museo</li>
+            </a>
+            <a href="#">
+                <li class="link__menu"><i class="fa-solid fa-chalkboard-user"></i>E-lerning</li>
+            </a>
         </ul>
 
     </section>
@@ -89,25 +95,50 @@
     <!-- SECTION PRINCIPAL -->
 
     <section class="section__principal">
+
+
+
         <div class="container-fluid">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/cadetes.jpg" class="d-block w-100" alt="...">
+                        <img src="img/cadetes.jpg" class="d-block w-100" alt="cadetes">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/destructor.jpg" class="d-block w-100" alt="...">
+                        <img src="img/destructor.jpg" class="d-block w-100" alt="destructor en mar">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/comando.jpg" class="d-block w-100" alt="...">
+                        <img src="img/comando.jpg" class="d-block w-100" alt="helicoptero">
                     </div>
-                    
+                    <div class="carousel-caption degradado">
+                        <h1><span>Ingresa a la Escuela Naval</span></h1>
+                    </div>
                 </div>
-
             </div>
-
         </div>
+
+
+        <div class="card w-80 card-cuina">
+            <div class="card-body">
+                <i class="fa-solid fa-user-graduate"></i>
+                <h2 class="card-title">Ingreso profesionales (CUINA)</h2>
+                <p class="card-text">Ingreso abierto</p>
+                <a href="#" class="btn btn-primary primario">Inscribirse</a>
+            </div>
+        </div>
+
+        <div class="card w-80 card-cadete">
+            <div class="card-body">
+                <i class="fa-solid fa-user"></i>
+                <h2 class="card-title">Ingreso cadetes</h2>
+                <p class="card-text">Ingreso cerrado</p>
+                <a href="#" class="btn btn-primary primario deshabilitado">Inscribirse</a>
+            </div>
+        </div>
+    
     </section>
+
+
 
 
 

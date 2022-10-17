@@ -20,6 +20,15 @@ sans-serif;
     background-color: $secundario !important;
 }
 
+.terciario {
+    background-color: $terciario !important;
+}
+
+.deshabilitado {
+    opacity: 0.4;
+    cursor:none ;
+}
+
 .container-fluid {
     padding-right: 0!important;
     padding-left: 0!important;
