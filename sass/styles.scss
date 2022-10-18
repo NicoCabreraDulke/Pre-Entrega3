@@ -47,13 +47,14 @@
     .tarjetas__ingreso {
         background-color: $terciario;
         padding: 15px;
+
         .card {
             font-family: $font2;
             border-radius: 20px;
             padding: 15px;
             margin-bottom: 10px;
             color: $secundario;
-            border: 2px solid #f8b233 !important;
+            border: 2px solid $terciario !important;
 
             .btn {
                 border: none;
@@ -63,8 +64,30 @@
             h2 {
                 font-family: $font1;
                 font-size: 20px;
-                font-weight: 600;
+                font-weight: 800;
                 text-transform: uppercase;
+            }
+
+            .positivo {
+                color: darkgreen;
+                font-family: $font2;
+                font-weight: 800;
+
+                i {
+                    font-size: 16px;
+                    color: darkgreen;
+                }
+            }
+
+            .negativo {
+                color: darkred;
+                font-family: $font2;
+                font-weight: 800;
+
+                i {
+                    font-size: 16px;
+                    color: darkred;
+                }
             }
 
             i {
@@ -125,13 +148,18 @@
             "tarjetas redes"
             "tarjetas redes";
 
+        .carousel-item {
+            height: 45vh;
+        }
+
+
         .container-fluid {
             grid-area: carousel;
         }
 
         .tarjetas__ingreso {
             grid-area: tarjetas;
-            background-color: #f8b233;
+            background-color: $terciario;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -150,9 +178,30 @@
     }
 }
 
-@media (min-width:920px) {
+
+@media (min-width:992px) {
+
+    .section__principal {
+        margin: 50px 100px;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas:
+            "carousel carousel"
+            "tarjetas redes"
+            "tarjetas redes";
 
 
+        .tarjetas__ingreso {
+            background-color: #fff;
+        }
+
+        .redes {
+            background-color: #fff;
+        }
+    }
+}
+
+
+@media (min-width:1200px) {
 
     .section__principal {
         margin: 50px 100px;
@@ -161,6 +210,7 @@
             "carousel tarjetas redes"
             "carousel tarjetas redes";
 
+
         .container-fluid {
             display: flex;
             justify-content: center;
@@ -168,7 +218,6 @@
         }
 
         .tarjetas__ingreso {
-            background-color: #fff;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -180,8 +229,8 @@
         }
 
         .redes {
-        background-color: #fff;
-        padding: 0px;
+            background-color: #fff;
+            padding: 0px;
         }
 
         .d-block,

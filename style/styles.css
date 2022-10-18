@@ -245,8 +245,26 @@ span:nth-child(2) {
 .section__principal .tarjetas__ingreso .card h2 {
   font-family: "Prompt", sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 800;
   text-transform: uppercase;
+}
+.section__principal .tarjetas__ingreso .card .positivo {
+  color: darkgreen;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+}
+.section__principal .tarjetas__ingreso .card .positivo i {
+  font-size: 16px;
+  color: darkgreen;
+}
+.section__principal .tarjetas__ingreso .card .negativo {
+  color: darkred;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+}
+.section__principal .tarjetas__ingreso .card .negativo i {
+  font-size: 16px;
+  color: darkred;
 }
 .section__principal .tarjetas__ingreso .card i {
   color: #112333;
@@ -290,6 +308,9 @@ span:nth-child(2) {
     grid-template-columns: 4fr 1fr;
     grid-template-areas: "carousel carousel" "tarjetas redes" "tarjetas redes";
   }
+  .section__principal .carousel-item {
+    height: 45vh;
+  }
   .section__principal .container-fluid {
     grid-area: carousel;
   }
@@ -310,7 +331,20 @@ span:nth-child(2) {
     flex-direction: column;
   }
 }
-@media (min-width: 920px) {
+@media (min-width: 992px) {
+  .section__principal {
+    margin: 50px 100px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "carousel carousel" "tarjetas redes" "tarjetas redes";
+  }
+  .section__principal .tarjetas__ingreso {
+    background-color: #fff;
+  }
+  .section__principal .redes {
+    background-color: #fff;
+  }
+}
+@media (min-width: 1200px) {
   .section__principal {
     margin: 50px 100px;
     grid-template-columns: 4fr 4fr 0.5fr;
@@ -322,7 +356,6 @@ span:nth-child(2) {
     align-items: center;
   }
   .section__principal .tarjetas__ingreso {
-    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
