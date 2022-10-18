@@ -10,28 +10,26 @@
 
 .section__principal {
 
-    background-color: #ddd;
     height: auto;
 
 
     .carousel-caption {
         position: absolute;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         right: 0 !important;
         bottom: 0 !important;
         left: 0 !important;
-        padding-top: 0.25rem !important;
-        padding-bottom: 0.25rem !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
         color: #fff;
         text-align: center;
         height: 60%;
 
         h1 {
             font-family: $font2;
-            font-size: 38px;
+            font-size: 40px;
             font-weight: 600;
             text-transform: none;
             margin-bottom: 5px !important;
@@ -45,20 +43,29 @@
     }
 
     .tarjetas__ingreso {
-        background-color: $terciario;
-        padding: 15px;
+        background-color: #ddd;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .card-cadete {
+            margin-top: 15px;
+        }
 
         .card {
-            font-family: $font2;
-            border-radius: 20px;
-            padding: 15px;
-            margin-bottom: 10px;
+            width: 100%;
+            border-radius: 15px;
+            padding: 10px;
             color: $secundario;
-            border: 2px solid $terciario !important;
 
-            .btn {
+            .btn,
+            .btn-primary {
                 border: none;
-                color: #fff
+                color: #fff;
+                border-radius: 5px;
+
             }
 
             h2 {
@@ -66,181 +73,133 @@
                 font-size: 20px;
                 font-weight: 800;
                 text-transform: uppercase;
+
+                i {
+                    color: $terciario;
+                    font-size: 20px;
+                }
             }
 
             .positivo {
-                color: darkgreen;
+                color: $secundario;
                 font-family: $font2;
                 font-weight: 800;
+                text-transform: uppercase;
 
                 i {
                     font-size: 16px;
-                    color: darkgreen;
+                    color: $secundario;
                 }
             }
 
             .negativo {
-                color: darkred;
+                color: darkgrey;
                 font-family: $font2;
                 font-weight: 800;
+                text-transform: uppercase;
 
                 i {
                     font-size: 16px;
-                    color: darkred;
+                    color: darkgrey;
                 }
-            }
-
-            i {
-                color: $secundario;
-                font-size: 30px;
             }
         }
     }
 
 
     .redes {
-        padding: 25px;
+        padding: 10px 20px;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $primario;
+        background-color: $secundario;
 
         .boton__redes {
-            width: 65px;
-            height: 65px;
+            width: 55px;
+            height: 55px;
             line-height: 50px;
-            font-size: 25px;
+            font-size: 20px;
             margin: 15px;
             padding: 0;
             border: 3px solid $terciario;
             color: #fff;
-            background-color: $primario;
+            background-color: $secundario;
             border-radius: 50%;
             min-width: 55px;
             transition: 550ms ease;
         }
-
-        .boton__redes:hover {
-            font-size: 26px;
-            border: 3px solid $secundario;
-            color: $secundario;
-        }
     }
-
-
-
 }
 
-.degradado {
-    background-image: linear-gradient(to bottom, rgba(61, 61, 61, 0), rgba(0, 0, 0, 0.959));
-}
+.section__preguntas {
+    
+    
+    .accordion {
+        margin: 25px;
+        border-radius: 15px;
+        
+        .accordion-item {
 
-@media (min-width:720px) {
+            button {
+                font-family: $font1;
+                color: $secundario;
+                font-weight: 600;
+            }
 
-
-
-    .section__principal {
-        background-color: #fff;
-        display: grid;
-        grid-template-columns: 4fr 1fr;
-        grid-template-areas:
-            "carousel carousel"
-            "tarjetas redes"
-            "tarjetas redes";
-
-        .carousel-item {
-            height: 45vh;
-        }
-
-
-        .container-fluid {
-            grid-area: carousel;
-        }
-
-        .tarjetas__ingreso {
-            grid-area: tarjetas;
-            background-color: $terciario;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            .card {
-                width: 95%;
+            .accordion-body {
+                font-family: $font2;
             }
         }
-
-        .redes {
-            grid-area: redes;
-            display: flex;
-            flex-direction: column;
-        }
     }
 }
 
-
-@media (min-width:992px) {
-
-    .section__principal {
-        margin: 50px 100px;
-        grid-template-columns: 3fr 1fr;
-        grid-template-areas:
-            "carousel carousel"
-            "tarjetas redes"
-            "tarjetas redes";
-
-
-        .tarjetas__ingreso {
-            background-color: #fff;
-        }
-
-        .redes {
-            background-color: #fff;
-        }
-    }
-}
+.about__us {
+    background-image: url("../img/fondo-escuela.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 
 
-@media (min-width:1200px) {
 
-    .section__principal {
-        margin: 50px 100px;
-        grid-template-columns: 4fr 4fr 0.5fr;
-        grid-template-areas:
-            "carousel tarjetas redes"
-            "carousel tarjetas redes";
+    .about__us--caja {
+        background-color: rgba(0, 23, 49, .6);
+        
+        bottom: 0;
+        margin-top: 200px;
+        padding: 50px;
 
-
-        .container-fluid {
+        .about__us--titulo {
             display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+            border-bottom: 2px solid $terciario;
 
-        .tarjetas__ingreso {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            .card {
-                width: 95%;
+            i {
+                font-size: 20px;
+                color: $terciario;
+                padding-right: 10px;
             }
-        }
 
-        .redes {
-            background-color: #fff;
-            padding: 0px;
-        }
+            h3 {
+                font-family: $font1;
+                text-transform: uppercase;
+                font-weight: 600;
+                color: $terciario;
 
-        .d-block,
-        .w-100 {
-            min-height: 413.86px;
-            height: auto;
-            width: 100%;
-            object-fit: cover;
+            }
+
         }
 
 
+        p {
+            padding-top: 15px;
+            font-family: $font2;
+            color: #fff;
+            line-height: 22px;
+            text-align: justify;
+        }
     }
 }

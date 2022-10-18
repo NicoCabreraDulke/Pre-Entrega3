@@ -4,7 +4,7 @@
 }
 
 $primario: #0a151f;
-$secundario: #112333;
+$secundario: #19304b;
 $terciario: #f8b233;
 $oscuro: #04070a;
 $font1 : 'Prompt',
@@ -24,6 +24,10 @@ sans-serif;
     background-color: $terciario !important;
 }
 
+.degradado {
+    background-image: linear-gradient(to bottom, rgba(61, 61, 61, 0), rgba(0, 0, 0, 0.959));
+}
+
 .deshabilitado {
     opacity: 0.4;
     cursor:none ;
@@ -33,3 +37,4 @@ sans-serif;
     padding-right: 0!important;
     padding-left: 0!important;
 }
+
