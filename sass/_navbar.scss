@@ -8,7 +8,7 @@
 
     .nav-link {
         color: #fff !important;
-        font-family: 'Prompt', sans-serif;
+        font-family: $font1;
         text-transform: uppercase;
         font-weight: 400;
         font-size: 18px;
@@ -22,13 +22,13 @@
 
     .navbar-toggler {
         font-size: 1rem;
-        border: 2px solid #f8b233 !important;
+        border: 2px solid $terciario !important;
     }
 }
 
 .navbar-nav {
     background-color: $primario;
-    border-bottom: 2px solid #f8b233 !important;
+    border-bottom: 2px solid $terciario !important;
 
     .dropdown-menu {
         background-color: $secundario;
@@ -38,7 +38,7 @@
 
         .dropdown-item {
             color: #fff;
-            font-family: 'Prompt', sans-serif;
+            font-family: $font2;
             font-weight: 300;
             text-transform: uppercase;
         }

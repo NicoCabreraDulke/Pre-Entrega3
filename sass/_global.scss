@@ -7,7 +7,7 @@ $primario: #0a151f;
 $secundario: #19304b;
 $terciario: #f8b233;
 $oscuro: #04070a;
-$font1 : 'Prompt',
+$font1 : 'Fjalla One',
 sans-serif;
 $font2 : 'Roboto',
 sans-serif;
@@ -25,16 +25,15 @@ sans-serif;
 }
 
 .degradado {
-    background-image: linear-gradient(to bottom, rgba(61, 61, 61, 0), rgba(0, 0, 0, 0.959));
+    background-image: linear-gradient(180deg, rgba(14, 24, 45, 0) 25%, $primario 99%);
 }
 
 .deshabilitado {
     opacity: 0.4;
-    cursor:none ;
+    cursor: none;
 }
 
 .container-fluid {
-    padding-right: 0!important;
-    padding-left: 0!important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
 }
-

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,200;0,400;0,600;1,300&family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@300;400;700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 * {
   margin: 0;
@@ -18,7 +18,7 @@
 }
 
 .degradado {
-  background-image: linear-gradient(to bottom, rgba(61, 61, 61, 0), rgba(0, 0, 0, 0.959));
+  background-image: linear-gradient(180deg, rgba(14, 24, 45, 0) 25%, #0a151f 99%);
 }
 
 .deshabilitado {
@@ -39,7 +39,7 @@
 }
 .navbar .nav-link {
   color: #fff !important;
-  font-family: "Prompt", sans-serif;
+  font-family: "Fjalla One", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 18px;
@@ -66,7 +66,7 @@
 }
 .navbar-nav .dropdown-menu .dropdown-item {
   color: #fff;
-  font-family: "Prompt", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -130,7 +130,7 @@ header img {
   justify-content: center;
   align-items: center;
   list-style-type: none;
-  font-family: "Prompt", sans-serif;
+  font-family: "Fjalla One", sans-serif;
   text-transform: uppercase;
   padding: 15px 15px;
   font-size: 10.5px;
@@ -211,7 +211,7 @@ span:nth-child(2) {
   padding-bottom: 0 !important;
   color: #fff;
   text-align: center;
-  height: 60%;
+  height: 100%;
 }
 .section__principal .carousel-caption h1 {
   font-family: "Roboto", sans-serif;
@@ -220,6 +220,7 @@ span:nth-child(2) {
   text-transform: none;
   margin-bottom: 5px !important;
   padding: 0px 20px;
+  padding-top: 150px;
   letter-spacing: 2px;
   text-decoration: underline;
   -webkit-text-decoration-color: #f8b233;
@@ -250,11 +251,14 @@ span:nth-child(2) {
   border: none;
   color: #fff;
   border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  font-size: 11pt;
 }
 .section__principal .tarjetas__ingreso .card h2 {
-  font-family: "Prompt", sans-serif;
+  font-family: "Fjalla One", sans-serif;
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .section__principal .tarjetas__ingreso .card h2 i {
@@ -264,8 +268,9 @@ span:nth-child(2) {
 .section__principal .tarjetas__ingreso .card .positivo {
   color: #19304b;
   font-family: "Roboto", sans-serif;
-  font-weight: 800;
   text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
 }
 .section__principal .tarjetas__ingreso .card .positivo i {
   font-size: 16px;
@@ -274,8 +279,9 @@ span:nth-child(2) {
 .section__principal .tarjetas__ingreso .card .negativo {
   color: darkgrey;
   font-family: "Roboto", sans-serif;
-  font-weight: 800;
   text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
 }
 .section__principal .tarjetas__ingreso .card .negativo i {
   font-size: 16px;
@@ -308,16 +314,17 @@ span:nth-child(2) {
   border-radius: 15px;
 }
 .section__preguntas .accordion .accordion-item button {
-  font-family: "Prompt", sans-serif;
+  font-family: "Fjalla One", sans-serif;
   color: #19304b;
   font-weight: 600;
 }
 .section__preguntas .accordion .accordion-item .accordion-body {
   font-family: "Roboto", sans-serif;
+  text-align: justify;
 }
 
 .about__us {
-  background-image: url("../img/fondo-escuela.jpg");
+  background-image: url("../img/fondo-escuela2.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -330,7 +337,7 @@ span:nth-child(2) {
 .about__us .about__us--caja {
   background-color: rgba(0, 23, 49, 0.6);
   bottom: 0;
-  margin-top: 200px;
+  margin-top: 350px;
   padding: 50px;
 }
 .about__us .about__us--caja .about__us--titulo {
@@ -343,10 +350,12 @@ span:nth-child(2) {
   padding-right: 10px;
 }
 .about__us .about__us--caja .about__us--titulo h3 {
-  font-family: "Prompt", sans-serif;
+  font-family: "Fjalla One", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
+  line-height: 22px;
   color: #f8b233;
+  letter-spacing: 2px;
 }
 .about__us .about__us--caja p {
   padding-top: 15px;
@@ -354,4 +363,85 @@ span:nth-child(2) {
   color: #fff;
   line-height: 22px;
   text-align: justify;
+}
+
+.section__testimonio .caja__testimonio {
+  margin: 35px 50px;
+}
+.section__testimonio .caja__testimonio .caja__titulo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 25px;
+}
+.section__testimonio .caja__testimonio .caja__titulo img {
+  border-radius: 100px;
+  height: 100px;
+  margin-right: 15px;
+}
+.section__testimonio .caja__testimonio .caja__titulo .titulo__testimonio {
+  display: flex;
+  flex-direction: column;
+}
+.section__testimonio .caja__testimonio .caja__titulo .titulo__testimonio .jerarquia {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff;
+  background-color: #f8b233;
+}
+.section__testimonio .caja__testimonio .caja__titulo .titulo__testimonio .nombre {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #19304b;
+  padding: 4px;
+}
+.section__testimonio .caja__testimonio .texto__testimonio {
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  color: #0a151f;
+}
+
+.section__accesos {
+  background-color: #ddd;
+  height: 300px;
+  display: flex;
+  margin: 50px 0;
+  margin-bottom: 0;
+  border-bottom: 2rem solid #19304b;
+}
+.section__accesos .caja_accesos {
+  background-image: linear-gradient(180deg, rgba(15, 31, 66, 0.062) 30%, #0a151f 100%), url(../img/navegacion.jpg);
+  height: auto;
+  width: 33.33%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__accesos .caja_accesos a {
+  text-decoration: none;
+}
+.section__accesos .caja_accesos h4 {
+  font-family: "Fjalla One", sans-serif;
+  transform: rotate(-90deg);
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 6px;
+  box-shadow: rgba(0, 0, 0, 0.466) 0px 5px 15px;
+}
+.section__accesos .caja_accesos:nth-child(2) {
+  background-image: linear-gradient(180deg, rgba(15, 31, 66, 0.062) 30%, #0a151f 100%), url(../img/historia.jpg);
+}
+.section__accesos .caja_accesos:nth-child(3) {
+  background-image: linear-gradient(180deg, rgba(15, 31, 66, 0.062) 30%, #0a151f 100%), url(../img/rincones.jpg);
+}
+
+footer {
+  height: 400px;
+  background-color: #0a151f;
 }/*# sourceMappingURL=styles.css.map */
