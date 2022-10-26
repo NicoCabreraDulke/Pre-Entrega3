@@ -6,7 +6,7 @@
 @import "spananimation";
 
 
-
+/** First mobile **/
 
 .section__principal {
 
@@ -136,178 +136,261 @@
             transition: 550ms ease;
         }
     }
+
 }
 
-.section__preguntas {
+
+.section__secundaria {
+
+    .section__preguntas {
 
 
-    .accordion {
-        margin: 25px;
-        border-radius: 15px;
+        .accordion {
+            margin: 25px;
+            border-radius: 15px;
 
-        .accordion-item {
+            .accordion-item {
 
-            button {
-                font-family: $font1;
-                color: $secundario;
-                font-weight: 600;
+                button {
+                    font-family: $font1;
+                    color: $secundario;
+                    font-weight: 600;
+                }
+
+                .accordion-body {
+                    font-family: $font2;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+
+    .about__us {
+        background-image: url("../img/fondo-escuela2.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+
+
+        .about__us--caja {
+            background-color: rgba(0, 23, 49, .6);
+            bottom: 0;
+            margin-top: 350px;
+            padding: 50px;
+
+
+            .about__us--titulo {
+                display: flex;
+                border-bottom: 2px solid $terciario;
+
+                i {
+                    font-size: 20px;
+                    color: $terciario;
+                    padding-right: 10px;
+                }
+
+                h3 {
+                    font-family: $font1;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    line-height: 22px;
+                    color: $terciario;
+                    letter-spacing: 2px;
+
+                }
+
             }
 
-            .accordion-body {
+
+            p {
+                padding-top: 15px;
                 font-family: $font2;
+                color: #fff;
+                line-height: 22px;
                 text-align: justify;
             }
         }
     }
-}
 
-.about__us {
-    background-image: url("../img/fondo-escuela2.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    
+    .section__testimonio {
 
+        .caja__testimonio {
 
-    .about__us--caja {
-        background-color: rgba(0, 23, 49, .6);
-        bottom: 0;
-        margin-top: 350px;
-        padding: 50px;
-        
+            margin: 35px 50px;
 
-        .about__us--titulo {
-            display: flex;
-            border-bottom: 2px solid $terciario;
-
-            i {
-                font-size: 20px;
-                color: $terciario;
-                padding-right: 10px;
-            }
-
-            h3 {
-                font-family: $font1;
-                text-transform: uppercase;
-                font-weight: 600;
-                line-height: 22px;
-                color: $terciario;
-                letter-spacing: 2px;
-
-            }
-
-        }
-
-
-        p {
-            padding-top: 15px;
-            font-family: $font2;
-            color: #fff;
-            line-height: 22px;
-            text-align: justify;
-        }
-    }
-}
-
-.section__testimonio {
-
-    .caja__testimonio {
-
-        margin: 35px 50px;
-
-        .caja__titulo {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding-bottom: 25px;
-
-            img {
-                border-radius: 100px;
-                height: 100px;
-                margin-right: 15px;
-            }
-
-            .titulo__testimonio {
+            .caja__titulo {
                 display: flex;
-                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding-bottom: 25px;
 
-                .jerarquia {
-                    font-family: $font2;
-                    text-transform: uppercase;
-                    font-size: 12px;
-                    color: #fff;
-                    background-color: $terciario;
+                img {
+                    border-radius: 100px;
+                    height: 100px;
+                    margin-right: 15px;
                 }
 
-                .nombre {
-                    font-family: $font1;
-                    font-weight: 600;
-                    font-size: 1.5rem;
-                    text-transform: uppercase;
-                    color: $secundario;
-                    padding: 4px;
+                .titulo__testimonio {
+                    display: flex;
+                    flex-direction: column;
+
+                    .jerarquia {
+                        font-family: $font2;
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        color: #fff;
+                        background-color: $terciario;
+                    }
+
+                    .nombre {
+                        font-family: $font1;
+                        font-weight: 600;
+                        font-size: 1.5rem;
+                        text-transform: uppercase;
+                        color: $secundario;
+                        padding: 4px;
+                    }
                 }
+            }
+
+            .texto__testimonio {
+                font-family: $font2;
+                text-align: justify;
+                color: $primario;
+
+            }
+        }
+    }
+
+    .section__accesos {
+        background-color: #ddd;
+        height: 300px;
+        display: flex;
+        margin: 50px 0;
+        margin-bottom: 0;
+
+        .caja_accesos {
+            background-image: linear-gradient(180deg, rgba(15, 31, 66, 0.062) 30%, $primario 100%), url(../img/navegacion.jpg);
+            height: auto;
+            width: 33.33%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+            }
+
+            h4 {
+                font-family: $font1;
+                transform: rotate(-90deg);
+                color: #fff;
+                font-size: 2rem;
+                letter-spacing: 6px;
+                box-shadow: rgba(0, 0, 0, 0.466) 0px 5px 15px;
             }
         }
 
-        .texto__testimonio {
-            font-family: $font2;
-            text-align: justify;
-            color: $primario;
-            
+        .caja_accesos:nth-child(2) {
+            background-image: linear-gradient(180deg, rgba(15, 31, 66, 0.062) 30%, $primario 100%), url(../img/historia.jpg);
         }
-    }
-}
 
-.section__accesos {
-    background-color: #ddd;
-    height: 300px;
-    display: flex;
-    margin: 50px 0;
-    margin-bottom: 0;
-    border-bottom: 2rem solid $secundario;
-
-    .caja_accesos {
-        background-image: linear-gradient(180deg, rgba(15, 31, 66, 0.062) 30%, $primario 100%), url(../img/navegacion.jpg);
-        height: auto;
-        width: 33.33%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        a {
-            text-decoration: none;
+        .caja_accesos:nth-child(3) {
+            background-image: linear-gradient(180deg, rgba(15, 31, 66, 0.062) 30%, $primario 100%), url(../img/rincones.jpg);
         }
-        
-        h4 {
-            font-family: $font1;
-            transform: rotate(-90deg);
-            color: #fff;
-            font-size: 2rem;
-            letter-spacing: 6px;
-            box-shadow: rgba(0, 0, 0, 0.466) 0px 5px 15px;
-        }
-    }
 
-    .caja_accesos:nth-child(2) {
-        background-image: linear-gradient(180deg, rgba(15, 31, 66, 0.062) 30%, $primario 100%), url(../img/historia.jpg);
     }
-
-    .caja_accesos:nth-child(3) {
-        background-image: linear-gradient(180deg, rgba(15, 31, 66, 0.062) 30%, $primario 100%), url(../img/rincones.jpg);
-    }
-
 }
 
 footer {
     height: 400px;
-    background-color: $primario;
+    background-color: $secundario;
+}
+
+
+/** Responsive para desktop **/
+
+@media (min-width: 768px) {
+
+    .section__principal {
+
+        .container-fluid {
+            grid-area: carousel;
+        }
+
+        .tarjetas__ingreso {
+            grid-area: ingreso;
+        }
+
+        .redes {
+            grid-area: redes;
+            display: flex;
+            flex-direction: column;
+        }
+
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas: "carousel carousel"
+        "redes ingreso";
+
+    }
+
+    .section__secundaria {
+
+        .section__preguntas {
+            grid-area: preguntas
+        }
+
+        .about__us {
+            grid-area: nosotros;
+            min-height: 200px;
+            margin: 0px 25px;
+
+            .about__us--caja {
+                margin-top: 0;
+            }
+        }
+
+        .section__testimonio {
+            grid-area: testimonio;
+        }
+
+        .section__accesos {
+            grid-area: accesos;
+        }
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "preguntas preguntas"
+        "nosotros nosotros"
+        "testimonio testimonio"
+        "accesos accesos";
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .section__principal {
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "carousel ingreso"
+            "redes redes";
+
+            .redes {
+                flex-direction: row;
+            }
+
+    }
+
 }

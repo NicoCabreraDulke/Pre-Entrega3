@@ -196,6 +196,7 @@ span:nth-child(2) {
     filter: blur(0);
   }
 }
+/** First mobile **/
 .section__principal {
   height: auto;
 }
@@ -309,21 +310,20 @@ span:nth-child(2) {
   transition: 550ms ease;
 }
 
-.section__preguntas .accordion {
+.section__secundaria .section__preguntas .accordion {
   margin: 25px;
   border-radius: 15px;
 }
-.section__preguntas .accordion .accordion-item button {
+.section__secundaria .section__preguntas .accordion .accordion-item button {
   font-family: "Fjalla One", sans-serif;
   color: #19304b;
   font-weight: 600;
 }
-.section__preguntas .accordion .accordion-item .accordion-body {
+.section__secundaria .section__preguntas .accordion .accordion-item .accordion-body {
   font-family: "Roboto", sans-serif;
   text-align: justify;
 }
-
-.about__us {
+.section__secundaria .about__us {
   background-image: url("../img/fondo-escuela2.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -334,22 +334,22 @@ span:nth-child(2) {
   justify-content: center;
   align-items: flex-end;
 }
-.about__us .about__us--caja {
+.section__secundaria .about__us .about__us--caja {
   background-color: rgba(0, 23, 49, 0.6);
   bottom: 0;
   margin-top: 350px;
   padding: 50px;
 }
-.about__us .about__us--caja .about__us--titulo {
+.section__secundaria .about__us .about__us--caja .about__us--titulo {
   display: flex;
   border-bottom: 2px solid #f8b233;
 }
-.about__us .about__us--caja .about__us--titulo i {
+.section__secundaria .about__us .about__us--caja .about__us--titulo i {
   font-size: 20px;
   color: #f8b233;
   padding-right: 10px;
 }
-.about__us .about__us--caja .about__us--titulo h3 {
+.section__secundaria .about__us .about__us--caja .about__us--titulo h3 {
   font-family: "Fjalla One", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
@@ -357,40 +357,39 @@ span:nth-child(2) {
   color: #f8b233;
   letter-spacing: 2px;
 }
-.about__us .about__us--caja p {
+.section__secundaria .about__us .about__us--caja p {
   padding-top: 15px;
   font-family: "Roboto", sans-serif;
   color: #fff;
   line-height: 22px;
   text-align: justify;
 }
-
-.section__testimonio .caja__testimonio {
+.section__secundaria .section__testimonio .caja__testimonio {
   margin: 35px 50px;
 }
-.section__testimonio .caja__testimonio .caja__titulo {
+.section__secundaria .section__testimonio .caja__testimonio .caja__titulo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-bottom: 25px;
 }
-.section__testimonio .caja__testimonio .caja__titulo img {
+.section__secundaria .section__testimonio .caja__testimonio .caja__titulo img {
   border-radius: 100px;
   height: 100px;
   margin-right: 15px;
 }
-.section__testimonio .caja__testimonio .caja__titulo .titulo__testimonio {
+.section__secundaria .section__testimonio .caja__testimonio .caja__titulo .titulo__testimonio {
   display: flex;
   flex-direction: column;
 }
-.section__testimonio .caja__testimonio .caja__titulo .titulo__testimonio .jerarquia {
+.section__secundaria .section__testimonio .caja__testimonio .caja__titulo .titulo__testimonio .jerarquia {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 12px;
   color: #fff;
   background-color: #f8b233;
 }
-.section__testimonio .caja__testimonio .caja__titulo .titulo__testimonio .nombre {
+.section__secundaria .section__testimonio .caja__testimonio .caja__titulo .titulo__testimonio .nombre {
   font-family: "Fjalla One", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
@@ -398,21 +397,19 @@ span:nth-child(2) {
   color: #19304b;
   padding: 4px;
 }
-.section__testimonio .caja__testimonio .texto__testimonio {
+.section__secundaria .section__testimonio .caja__testimonio .texto__testimonio {
   font-family: "Roboto", sans-serif;
   text-align: justify;
   color: #0a151f;
 }
-
-.section__accesos {
+.section__secundaria .section__accesos {
   background-color: #ddd;
   height: 300px;
   display: flex;
   margin: 50px 0;
   margin-bottom: 0;
-  border-bottom: 2rem solid #19304b;
 }
-.section__accesos .caja_accesos {
+.section__secundaria .section__accesos .caja_accesos {
   background-image: linear-gradient(180deg, rgba(15, 31, 66, 0.062) 30%, #0a151f 100%), url(../img/navegacion.jpg);
   height: auto;
   width: 33.33%;
@@ -423,10 +420,10 @@ span:nth-child(2) {
   justify-content: center;
   align-items: center;
 }
-.section__accesos .caja_accesos a {
+.section__secundaria .section__accesos .caja_accesos a {
   text-decoration: none;
 }
-.section__accesos .caja_accesos h4 {
+.section__secundaria .section__accesos .caja_accesos h4 {
   font-family: "Fjalla One", sans-serif;
   transform: rotate(-90deg);
   color: #fff;
@@ -434,14 +431,65 @@ span:nth-child(2) {
   letter-spacing: 6px;
   box-shadow: rgba(0, 0, 0, 0.466) 0px 5px 15px;
 }
-.section__accesos .caja_accesos:nth-child(2) {
+.section__secundaria .section__accesos .caja_accesos:nth-child(2) {
   background-image: linear-gradient(180deg, rgba(15, 31, 66, 0.062) 30%, #0a151f 100%), url(../img/historia.jpg);
 }
-.section__accesos .caja_accesos:nth-child(3) {
+.section__secundaria .section__accesos .caja_accesos:nth-child(3) {
   background-image: linear-gradient(180deg, rgba(15, 31, 66, 0.062) 30%, #0a151f 100%), url(../img/rincones.jpg);
 }
 
 footer {
   height: 400px;
-  background-color: #0a151f;
+  background-color: #19304b;
+}
+
+/** Responsive para desktop **/
+@media (min-width: 768px) {
+  .section__principal {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "carousel carousel" "redes ingreso";
+  }
+  .section__principal .container-fluid {
+    grid-area: carousel;
+  }
+  .section__principal .tarjetas__ingreso {
+    grid-area: ingreso;
+  }
+  .section__principal .redes {
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+  }
+  .section__secundaria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "preguntas preguntas" "nosotros nosotros" "testimonio testimonio" "accesos accesos";
+  }
+  .section__secundaria .section__preguntas {
+    grid-area: preguntas;
+  }
+  .section__secundaria .about__us {
+    grid-area: nosotros;
+    min-height: 200px;
+    margin: 0px 25px;
+  }
+  .section__secundaria .about__us .about__us--caja {
+    margin-top: 0;
+  }
+  .section__secundaria .section__testimonio {
+    grid-area: testimonio;
+  }
+  .section__secundaria .section__accesos {
+    grid-area: accesos;
+  }
+}
+@media (min-width: 1200px) {
+  .section__principal {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "carousel ingreso" "redes redes";
+  }
+  .section__principal .redes {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=styles.css.map */
