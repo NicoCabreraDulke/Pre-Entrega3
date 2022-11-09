@@ -1,5 +1,5 @@
 main {
-    height: 95vh;
+    height: 100vh;
     background-image:
         linear-gradient(to right bottom,
             rgba(10, 21, 31, 0.8),
@@ -10,7 +10,7 @@ main {
     background-position: top;
     position: relative;
 
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
 
 
 
@@ -158,12 +158,22 @@ main {
                 rgba(20, 60, 105, 0.8)),
             url('../img/cadetes2-desktop.jpg');
 
+        
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        padding: 100px 200px;
+        padding-top: 40px;
+
         .titulo__main {
             grid-area: titulo;
         }
 
         .tarjetas__ingreso {
             grid-area: ingreso;
+            
         }
 
         .redes {
@@ -172,15 +182,8 @@ main {
         }
 
         display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-template-areas: "titulo titulo" "ingreso redes";
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-areas: "titulo titulo titulo" "ingreso . redes";
         padding: 50px 100px;
-    }
-}
-
-@media (min-width: 1200px) {
-    main {
-        padding: 100px 200px;
-        padding-top: 40px;
     }
 }

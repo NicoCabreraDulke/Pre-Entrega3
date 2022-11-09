@@ -14,4 +14,101 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    
+
+    .caja__logos {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid $terciario;
+        padding-bottom: 50px;
+
+        .caja__logos-img {
+            width: 200px;
+            padding: 25px 0;
+
+        }
+    }
+
+    .caja__footer {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .caja__footer--contacto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 25px;
+
+            .footer__contacto--info {
+                padding: 15px;
+                color: #fff;
+                display: flex;
+
+
+                i {
+                    color: $terciario;
+                    line-height: 2rem;
+                    font-size: 2rem;
+                    padding-right: 1rem;
+                }
+
+                .contacto__info--text {
+                    
+                    width: 90%;
+
+                    h4 {
+                        font-family: $font1;
+                        letter-spacing: 2px;
+                    }
+                    
+                    p {
+                        font-family: $font2;
+                    }
+                }
+            }
+        }
+
+        .caja__footer--copy {
+            margin-top: 15px;
+            text-align: center;
+            color: darkgray
+        }
+    }
+}
+
+@media (min-width: 576px) {
+
+    footer {
+
+        .caja__logos {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+
+            .caja__logos-img {
+                width: 250px;
+                padding: 40px;
+            }
+        }
+
+        .caja__footer {
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
+    footer {
+
+        .caja__footer {
+            .caja__footer--contacto {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+        }
+    }
 }

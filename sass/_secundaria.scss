@@ -37,8 +37,7 @@
         background-position: center;
         min-height: 450px;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        
 
 
 
@@ -48,7 +47,7 @@
             padding: 100px 50px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            
 
 
 
@@ -258,17 +257,18 @@
         }
 
         .about__us {
-            margin-top: 50px;
+            min-height: 800px;
             grid-area: nosotros;
         }
 
         .section__testimonio {
 
             grid-area: testimonio;
+            height: auto;
             
                 .caja__testimonio {
 
-                    border-bottom: 2px solid $terciario;
+                    
 
                     .texto__testimonio {
                         line-height: 2rem;
@@ -283,10 +283,11 @@
 
         display: grid;
         margin-bottom: 100px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 3fr 2fr 1fr;
         grid-template-areas: 
-        "preguntas testimonio"
-        "rincones nosotros";
+        ". preguntas rincones ."
+        ". nosotros nosotros ."
+        ". testimonio testimonio .";
 
     }
 

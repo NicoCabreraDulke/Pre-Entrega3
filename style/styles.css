@@ -201,13 +201,13 @@ span:nth-child(2) {
   }
 }
 main {
-  height: 95vh;
+  height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(10, 21, 31, 0.8), rgba(20, 60, 105, 0.8)), url("../img/cadetes2.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
 }
 main .titulo__main h1 {
   color: #fff;
@@ -328,9 +328,15 @@ main .redes .boton__redes:hover {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
     background-image: linear-gradient(to right bottom, rgba(10, 21, 31, 0.8), rgba(20, 60, 105, 0.8)), url("../img/cadetes2-desktop.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  main {
+    padding: 100px 200px;
+    padding-top: 40px;
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas: "titulo titulo" "ingreso redes";
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: "titulo titulo titulo" "ingreso . redes";
     padding: 50px 100px;
   }
   main .titulo__main {
@@ -342,12 +348,6 @@ main .redes .boton__redes:hover {
   main .redes {
     grid-area: redes;
     flex-direction: column;
-  }
-}
-@media (min-width: 1200px) {
-  main {
-    padding: 100px 200px;
-    padding-top: 40px;
   }
 }
 /** SECTION SECUNDARIA **/
@@ -372,15 +372,12 @@ main .redes .boton__redes:hover {
   background-position: center;
   min-height: 450px;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .section__secundaria .about__us .about__us--caja {
   min-height: 450px;
   padding: 100px 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .section__secundaria .about__us .about__us--caja .about__us--titulo {
   display: flex;
@@ -532,8 +529,8 @@ main .redes .boton__redes:hover {
   .section__secundaria {
     display: grid;
     margin-bottom: 100px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "preguntas testimonio" "rincones nosotros";
+    grid-template-columns: 1fr 3fr 2fr 1fr;
+    grid-template-areas: ". preguntas rincones ." ". nosotros nosotros ." ". testimonio testimonio .";
   }
   .section__secundaria .section__preguntas {
     grid-area: preguntas;
@@ -542,14 +539,12 @@ main .redes .boton__redes:hover {
     margin: 50px 50px;
   }
   .section__secundaria .about__us {
-    margin-top: 50px;
+    min-height: 800px;
     grid-area: nosotros;
   }
   .section__secundaria .section__testimonio {
     grid-area: testimonio;
-  }
-  .section__secundaria .section__testimonio .caja__testimonio {
-    border-bottom: 2px solid #1b94cc;
+    height: auto;
   }
   .section__secundaria .section__testimonio .caja__testimonio .texto__testimonio {
     line-height: 2rem;
@@ -564,4 +559,71 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+footer .caja__logos {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #1b94cc;
+  padding-bottom: 50px;
+}
+footer .caja__logos .caja__logos-img {
+  width: 200px;
+  padding: 25px 0;
+}
+footer .caja__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .caja__footer .caja__footer--contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+}
+footer .caja__footer .caja__footer--contacto .footer__contacto--info {
+  padding: 15px;
+  color: #fff;
+  display: flex;
+}
+footer .caja__footer .caja__footer--contacto .footer__contacto--info i {
+  color: #1b94cc;
+  line-height: 2rem;
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+footer .caja__footer .caja__footer--contacto .footer__contacto--info .contacto__info--text {
+  width: 90%;
+}
+footer .caja__footer .caja__footer--contacto .footer__contacto--info .contacto__info--text h4 {
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 2px;
+}
+footer .caja__footer .caja__footer--contacto .footer__contacto--info .contacto__info--text p {
+  font-family: "Roboto", sans-serif;
+}
+footer .caja__footer .caja__footer--copy {
+  margin-top: 15px;
+  text-align: center;
+  color: darkgray;
+}
+
+@media (min-width: 576px) {
+  footer .caja__logos {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  footer .caja__logos .caja__logos-img {
+    width: 250px;
+    padding: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  footer .caja__footer .caja__footer--contacto {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }/*# sourceMappingURL=styles.css.map */
