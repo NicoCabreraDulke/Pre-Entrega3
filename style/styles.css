@@ -10,15 +10,19 @@
 }
 
 .secundario {
-  background-color: #19304b !important;
+  background-color: #143c69 !important;
+}
+
+.secundario:hover {
+  background-color: #1b94cc !important;
 }
 
 .terciario {
-  background-color: #f8b233 !important;
+  background-color: #1b94cc !important;
 }
 
 .degradado {
-  background-image: linear-gradient(180deg, rgba(14, 24, 45, 0) 25%, #0a151f 99%);
+  background-image: linear-gradient(180deg, rgba(14, 24, 45, 0.712) 25%, #0a151f 99%);
 }
 
 .deshabilitado {
@@ -47,19 +51,19 @@
   padding: 0.8rem 0.4rem !important;
 }
 .navbar .nav-link:hover {
-  background-color: #19304b;
+  background-color: #143c69;
 }
 .navbar .navbar-toggler {
   font-size: 1rem;
-  border: 2px solid #f8b233 !important;
+  border: 2px solid #1b94cc !important;
 }
 
 .navbar-nav {
   background-color: #0a151f;
-  border-bottom: 2px solid #f8b233 !important;
+  border-bottom: 2px solid #1b94cc !important;
 }
 .navbar-nav .dropdown-menu {
-  background-color: #19304b;
+  background-color: #143c69;
   border: none;
   border-radius: 0;
   border-top: 3px solid #0a151f !important;
@@ -86,7 +90,7 @@ header img {
     padding: 25px 100px;
   }
   .navbar .nav-link {
-    border-right: 2px solid #f8b233;
+    border-right: 2px solid #1b94cc;
     font-size: 14px;
     padding: 0.1rem 0.4rem !important;
   }
@@ -109,7 +113,7 @@ header img {
   .navbar-nav .dropdown-menu {
     background-color: #0a151f;
     border: none;
-    border-bottom: 2px solid #f8b233;
+    border-bottom: 2px solid #1b94cc;
   }
   .navbar-nav .dropdown-menu .dropdown-item {
     color: #fff;
@@ -117,13 +121,13 @@ header img {
     text-transform: none;
   }
   .navbar-nav .dropdown-menu .dropdown-item:hover {
-    background-color: #19304b;
+    background-color: #143c69;
   }
 }
 /* NAVBAR SECUNDARIO*/
 .navbar__secundario {
   height: 60px;
-  background-color: #19304b;
+  background-color: #143c69;
 }
 .navbar__secundario ul {
   display: flex;
@@ -140,7 +144,7 @@ header img {
   text-decoration: none;
 }
 .navbar__secundario ul i {
-  color: #f8b233;
+  color: #1b94cc;
   font-size: 15px;
   padding-right: 2px;
 }
@@ -168,19 +172,19 @@ span {
   display: inline-block;
   opacity: 0;
   text-decoration: underline;
-  -webkit-text-decoration-color: #f8b233;
-          text-decoration-color: #f8b233;
+  -webkit-text-decoration-color: #1b94cc;
+          text-decoration-color: #1b94cc;
   filter: blur(4px);
 }
 
 span:nth-child(1) {
-  -webkit-animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-          animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  -webkit-animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 span:nth-child(2) {
-  -webkit-animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-          animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  -webkit-animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 @-webkit-keyframes fade-in {
@@ -196,127 +200,165 @@ span:nth-child(2) {
     filter: blur(0);
   }
 }
-/** First mobile **/
-.section__principal {
-  height: auto;
+main {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(10, 21, 31, 0.8), rgba(20, 60, 105, 0.8)), url("../img/cadetes2.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
 }
-.section__principal .carousel-caption {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  right: 0 !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+main .titulo__main h1 {
   color: #fff;
   text-align: center;
-  height: 100%;
-}
-.section__principal .carousel-caption h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 40px;
-  font-weight: 600;
-  text-transform: none;
-  margin-bottom: 5px !important;
-  padding: 0px 20px;
-  padding-top: 150px;
-  letter-spacing: 2px;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding: 0 25px;
+  padding-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
   text-decoration: underline;
-  -webkit-text-decoration-color: #f8b233;
-          text-decoration-color: #f8b233;
+  -webkit-text-decoration-color: #1b94cc;
+          text-decoration-color: #1b94cc;
   transform: scale(0.94);
   -webkit-animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
           animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
-.section__principal .tarjetas__ingreso {
-  background-color: #ddd;
+main .tarjetas__ingreso {
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto 0;
 }
-.section__principal .tarjetas__ingreso .card-cadete {
+main .tarjetas__ingreso .card-cadete {
   margin-top: 15px;
 }
-.section__principal .tarjetas__ingreso .card {
+main .tarjetas__ingreso .card {
   width: 100%;
   border-radius: 15px;
   padding: 10px;
-  color: #19304b;
+  color: #143c69;
 }
-.section__principal .tarjetas__ingreso .card .btn,
-.section__principal .tarjetas__ingreso .card .btn-primary {
+main .tarjetas__ingreso .card .btn,
+main .tarjetas__ingreso .card .btn-primary {
   border: none;
   color: #fff;
   border-radius: 5px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Fjalla One", sans-serif;
   letter-spacing: 2px;
+  text-transform: uppercase;
   font-size: 11pt;
 }
-.section__principal .tarjetas__ingreso .card h2 {
+main .tarjetas__ingreso .card h2 {
   font-family: "Fjalla One", sans-serif;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
 }
-.section__principal .tarjetas__ingreso .card h2 i {
-  color: #f8b233;
+main .tarjetas__ingreso .card h2 i {
+  color: #1b94cc;
   font-size: 20px;
 }
-.section__principal .tarjetas__ingreso .card .positivo {
-  color: #19304b;
+main .tarjetas__ingreso .card .positivo {
+  color: #143c69;
   font-family: "Roboto", sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 2px;
 }
-.section__principal .tarjetas__ingreso .card .positivo i {
+main .tarjetas__ingreso .card .positivo i {
   font-size: 16px;
-  color: #19304b;
+  color: #143c69;
 }
-.section__principal .tarjetas__ingreso .card .negativo {
+main .tarjetas__ingreso .card .negativo {
   color: darkgrey;
   font-family: "Roboto", sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 2px;
 }
-.section__principal .tarjetas__ingreso .card .negativo i {
+main .tarjetas__ingreso .card .negativo i {
   font-size: 16px;
   color: darkgrey;
 }
-.section__principal .redes {
-  padding: 10px 20px;
+main .redes {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #19304b;
+  height: auto;
 }
-.section__principal .redes .boton__redes {
+main .redes .boton__redes {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  font-size: 20px;
+  margin: 10px;
+  padding: 0;
+  border: 3px solid #1b94cc;
+  color: #fff;
+  background-color: #143c69;
+  border-radius: 50%;
+  transition: 550ms ease;
+}
+main .redes .boton__redes:hover {
+  background-color: #0a151f;
   width: 55px;
   height: 55px;
   line-height: 50px;
-  font-size: 20px;
-  margin: 15px;
-  padding: 0;
-  border: 3px solid #f8b233;
-  color: #fff;
-  background-color: #19304b;
-  border-radius: 50%;
-  min-width: 55px;
-  transition: 550ms ease;
+  font-size: 25px;
 }
 
+/** MAIN RESPONSIVE **/
+@media (min-width: 576px) {
+  main {
+    height: 85vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  }
+}
+@media (min-width: 768px) {
+  main {
+    height: 70vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+    background-image: linear-gradient(to right bottom, rgba(10, 21, 31, 0.8), rgba(20, 60, 105, 0.8)), url("../img/cadetes2-desktop.jpg");
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "titulo titulo" "ingreso redes";
+    padding: 50px 100px;
+  }
+  main .titulo__main {
+    grid-area: titulo;
+  }
+  main .tarjetas__ingreso {
+    grid-area: ingreso;
+  }
+  main .redes {
+    grid-area: redes;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1200px) {
+  main {
+    padding: 100px 200px;
+    padding-top: 40px;
+  }
+}
+/** SECTION SECUNDARIA **/
 .section__secundaria .section__preguntas .accordion {
   margin: 25px;
   border-radius: 15px;
 }
 .section__secundaria .section__preguntas .accordion .accordion-item button {
   font-family: "Fjalla One", sans-serif;
-  color: #19304b;
+  font-size: 1.5rem;
+  color: #143c69;
   font-weight: 600;
 }
 .section__secundaria .section__preguntas .accordion .accordion-item .accordion-body {
@@ -324,37 +366,38 @@ span:nth-child(2) {
   text-align: justify;
 }
 .section__secundaria .about__us {
-  background-image: url("../img/fondo-escuela2.jpg");
-  background-attachment: fixed;
-  background-position: center;
+  background-image: linear-gradient(to right bottom, rgba(20, 60, 105, 0.6), rgba(10, 21, 31, 0.6)), url("../img/fondo-escuela2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   min-height: 450px;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 }
 .section__secundaria .about__us .about__us--caja {
-  background-color: rgba(0, 23, 49, 0.6);
-  bottom: 0;
-  margin-top: 350px;
-  padding: 50px;
+  min-height: 450px;
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .section__secundaria .about__us .about__us--caja .about__us--titulo {
   display: flex;
-  border-bottom: 2px solid #f8b233;
+  border-bottom: 2px solid #1b94cc;
 }
 .section__secundaria .about__us .about__us--caja .about__us--titulo i {
   font-size: 20px;
-  color: #f8b233;
+  color: #1b94cc;
   padding-right: 10px;
 }
 .section__secundaria .about__us .about__us--caja .about__us--titulo h3 {
   font-family: "Fjalla One", sans-serif;
   text-transform: uppercase;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 22px;
-  color: #f8b233;
+  color: #fff;
   letter-spacing: 2px;
 }
 .section__secundaria .about__us .about__us--caja p {
@@ -363,9 +406,10 @@ span:nth-child(2) {
   color: #fff;
   line-height: 22px;
   text-align: justify;
+  line-height: 1.8rem;
 }
 .section__secundaria .section__testimonio .caja__testimonio {
-  margin: 35px 50px;
+  margin: 50px 50px;
 }
 .section__secundaria .section__testimonio .caja__testimonio .caja__titulo {
   display: flex;
@@ -384,112 +428,140 @@ span:nth-child(2) {
 }
 .section__secundaria .section__testimonio .caja__testimonio .caja__titulo .titulo__testimonio .jerarquia {
   font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  letter-spacing: 4px;
   text-transform: uppercase;
   font-size: 12px;
-  color: #fff;
-  background-color: #f8b233;
+  color: #143c69;
 }
 .section__secundaria .section__testimonio .caja__testimonio .caja__titulo .titulo__testimonio .nombre {
   font-family: "Fjalla One", sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
-  color: #19304b;
-  padding: 4px;
+  color: #143c69;
 }
 .section__secundaria .section__testimonio .caja__testimonio .texto__testimonio {
   font-family: "Roboto", sans-serif;
   text-align: justify;
   color: #0a151f;
+  line-height: 1.8rem;
 }
-.section__secundaria .section__accesos {
-  background-color: #ddd;
-  height: 300px;
+.section__secundaria .section__rincones {
+  padding: 25px;
+}
+.section__secundaria .section__rincones .section__rincones--titulo {
   display: flex;
-  margin: 50px 0;
-  margin-bottom: 0;
+  border-bottom: 2px solid #1b94cc;
+  margin-bottom: 25px;
 }
-.section__secundaria .section__accesos .caja_accesos {
-  background-image: linear-gradient(180deg, rgba(15, 31, 66, 0.062) 30%, #0a151f 100%), url(../img/navegacion.jpg);
-  height: auto;
-  width: 33.33%;
-  background-position: center;
+.section__secundaria .section__rincones .section__rincones--titulo h4 {
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 22px;
+  color: #143c69;
+  letter-spacing: 2px;
+}
+.section__secundaria .section__rincones .gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4px;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  align-content: start;
+  max-width: 700px;
+  margin: 0 auto;
+  transition: all 150ms linear;
+}
+.section__secundaria .section__rincones .gallery input[type=radio] {
+  display: none;
+}
+.section__secundaria .section__rincones .gallery label {
+  position: relative;
+  display: block;
+  padding-bottom: 60%;
+  margin: 5px;
+  cursor: pointer;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-position: 50% 50%;
 }
-.section__secundaria .section__accesos .caja_accesos a {
-  text-decoration: none;
+.section__secundaria .section__rincones .gallery label:before {
+  border: 1px solid #143c69;
+  content: "";
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  top: -5px;
 }
-.section__secundaria .section__accesos .caja_accesos h4 {
-  font-family: "Fjalla One", sans-serif;
-  transform: rotate(-90deg);
-  color: #fff;
-  font-size: 2rem;
-  letter-spacing: 6px;
-  box-shadow: rgba(0, 0, 0, 0.466) 0px 5px 15px;
+.section__secundaria .section__rincones .gallery img {
+  display: none;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%;
+  transition: all 150ms linear;
 }
-.section__secundaria .section__accesos .caja_accesos:nth-child(2) {
-  background-image: linear-gradient(180deg, rgba(15, 31, 66, 0.062) 30%, #0a151f 100%), url(../img/historia.jpg);
+.section__secundaria .section__rincones .gallery input[name=select]:checked + label + img {
+  display: block;
 }
-.section__secundaria .section__accesos .caja_accesos:nth-child(3) {
-  background-image: linear-gradient(180deg, rgba(15, 31, 66, 0.062) 30%, #0a151f 100%), url(../img/rincones.jpg);
+.section__secundaria .section__rincones .gallery input[name=select]:checked + label:before {
+  border: 1px solid #1b94cc;
+}
+.section__secundaria .section__rincones .gallery .img-tab-1 {
+  background-image: url(../img/biblioteca-min.jpg);
+}
+.section__secundaria .section__rincones .gallery .img-tab-2 {
+  background-image: url(../img/simu-min.jpg);
+}
+.section__secundaria .section__rincones .gallery .img-tab-3 {
+  background-image: url(../img/casino-min.jpg);
 }
 
-footer {
-  height: 400px;
-  background-color: #19304b;
+@media (min-width: 576px) {
+  .section__secundaria .accordion {
+    margin: 50px 50px;
+  }
 }
-
-/** Responsive para desktop **/
-@media (min-width: 768px) {
-  .section__principal {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-areas: "carousel carousel" "redes ingreso";
-  }
-  .section__principal .container-fluid {
-    grid-area: carousel;
-  }
-  .section__principal .tarjetas__ingreso {
-    grid-area: ingreso;
-  }
-  .section__principal .redes {
-    grid-area: redes;
-    display: flex;
-    flex-direction: column;
-  }
+@media (min-width: 1200px) {
   .section__secundaria {
     display: grid;
+    margin-bottom: 100px;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "preguntas preguntas" "nosotros nosotros" "testimonio testimonio" "accesos accesos";
+    grid-template-areas: "preguntas testimonio" "rincones nosotros";
   }
   .section__secundaria .section__preguntas {
     grid-area: preguntas;
   }
-  .section__secundaria .about__us {
-    grid-area: nosotros;
-    min-height: 200px;
-    margin: 0px 25px;
+  .section__secundaria .section__preguntas .accordion {
+    margin: 50px 50px;
   }
-  .section__secundaria .about__us .about__us--caja {
-    margin-top: 0;
+  .section__secundaria .about__us {
+    margin-top: 50px;
+    grid-area: nosotros;
   }
   .section__secundaria .section__testimonio {
     grid-area: testimonio;
   }
-  .section__secundaria .section__accesos {
-    grid-area: accesos;
+  .section__secundaria .section__testimonio .caja__testimonio {
+    border-bottom: 2px solid #1b94cc;
+  }
+  .section__secundaria .section__testimonio .caja__testimonio .texto__testimonio {
+    line-height: 2rem;
+  }
+  .section__secundaria .section__rincones {
+    grid-area: rincones;
   }
 }
-@media (min-width: 1200px) {
-  .section__principal {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "carousel ingreso" "redes redes";
-  }
-  .section__principal .redes {
-    flex-direction: row;
-  }
+footer {
+  background-color: #0a151f;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=styles.css.map */

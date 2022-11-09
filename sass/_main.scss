@@ -1,0 +1,186 @@
+main {
+    height: 95vh;
+    background-image:
+        linear-gradient(to right bottom,
+            rgba(10, 21, 31, 0.8),
+            rgba(20, 60, 105, 0.8)),
+        url('../img/cadetes2.jpg');
+
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+
+
+
+    .titulo__main {
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            font-family: $font1;
+            font-size: 2.5rem;
+            font-weight: 400;
+            padding: 0 25px;
+            padding-top: 50px;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            text-decoration: underline;
+            text-decoration-color: $terciario;
+            transform: scale(0.94);
+            animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+        }
+    }
+
+    .tarjetas__ingreso {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto 0;
+
+
+        .card-cadete {
+            margin-top: 15px;
+        }
+
+        .card {
+            width: 100%;
+            border-radius: 15px;
+            padding: 10px;
+            color: $secundario;
+
+            .btn,
+            .btn-primary {
+                border: none;
+                color: #fff;
+                border-radius: 5px;
+                font-family: $font1;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                font-size: 11pt;
+
+            }
+
+            h2 {
+                font-family: $font1;
+                font-size: 20px;
+                font-weight: 600;
+                text-transform: uppercase;
+
+                i {
+                    color: $terciario;
+                    font-size: 20px;
+                }
+            }
+
+            .positivo {
+                color: $secundario;
+                font-family: $font2;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 2px;
+
+
+                i {
+                    font-size: 16px;
+                    color: $secundario;
+                }
+            }
+
+            .negativo {
+                color: darkgrey;
+                font-family: $font2;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 2px;
+
+                i {
+                    font-size: 16px;
+                    color: darkgrey;
+                }
+            }
+        }
+    }
+
+
+    .redes {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+        .boton__redes {
+            width: 50px;
+            height: 50px;
+            line-height: 45px;
+            font-size: 20px;
+            margin: 10px;
+            padding: 0;
+            border: 3px solid $terciario;
+            color: #fff;
+            background-color: $secundario;
+            border-radius: 50%;
+            transition: 550ms ease;
+        }
+
+        .boton__redes:hover {
+            background-color: $primario;
+            width: 55px;
+            height: 55px;
+            line-height: 50px;
+            font-size: 25px;
+        }
+    }
+}
+
+/** MAIN RESPONSIVE **/
+
+@media (min-width: 576px) {
+    main {
+        height: 85vh;
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        height: 70vh;
+        clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+        background-image:
+            linear-gradient(to right bottom,
+                rgba(10, 21, 31, 0.8),
+                rgba(20, 60, 105, 0.8)),
+            url('../img/cadetes2-desktop.jpg');
+
+        .titulo__main {
+            grid-area: titulo;
+        }
+
+        .tarjetas__ingreso {
+            grid-area: ingreso;
+        }
+
+        .redes {
+            grid-area: redes;
+            flex-direction: column;
+        }
+
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: "titulo titulo" "ingreso redes";
+        padding: 50px 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        padding: 100px 200px;
+        padding-top: 40px;
+    }
+}

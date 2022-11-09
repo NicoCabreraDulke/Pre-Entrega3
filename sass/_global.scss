@@ -1,11 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 $primario: #0a151f;
-$secundario: #19304b;
-$terciario: #f8b233;
+$secundario: #143c69;
+$terciario: #1b94cc;
 $oscuro: #04070a;
 $font1 : 'Fjalla One',
 sans-serif;
@@ -20,12 +21,16 @@ sans-serif;
     background-color: $secundario !important;
 }
 
+.secundario:hover {
+    background-color: $terciario !important;
+}
+
 .terciario {
     background-color: $terciario !important;
 }
 
 .degradado {
-    background-image: linear-gradient(180deg, rgba(14, 24, 45, 0) 25%, $primario 99%);
+    background-image: linear-gradient(180deg, rgba(14, 24, 45, 0.712) 25%, $primario 99%);
 }
 
 .deshabilitado {

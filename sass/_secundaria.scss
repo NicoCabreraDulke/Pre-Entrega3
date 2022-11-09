@@ -1,0 +1,293 @@
+/** SECTION SECUNDARIA **/
+
+.section__secundaria {
+
+
+    .section__preguntas {
+
+
+        .accordion {
+            margin: 25px;
+            border-radius: 15px;
+
+            .accordion-item {
+
+                button {
+                    font-family: $font1;
+                    font-size: 1.5rem;
+                    color: $secundario;
+                    font-weight: 600;
+                }
+
+                .accordion-body {
+                    font-family: $font2;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+
+    .about__us {
+        background-image:
+            linear-gradient(to right bottom,
+                rgba(20, 60, 105, 0.6), rgba(10, 21, 31, 0.6)),
+            url('../img/fondo-escuela2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+
+        .about__us--caja {
+
+            min-height: 450px;
+            padding: 100px 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+
+            .about__us--titulo {
+                display: flex;
+                border-bottom: 2px solid $terciario;
+
+                i {
+                    font-size: 20px;
+                    color: $terciario;
+                    padding-right: 10px;
+                }
+
+                h3 {
+                    font-family: $font1;
+                    text-transform: uppercase;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    line-height: 22px;
+                    color: #fff;
+                    letter-spacing: 2px;
+
+                }
+
+            }
+
+
+            p {
+                padding-top: 15px;
+                font-family: $font2;
+                color: #fff;
+                line-height: 22px;
+                text-align: justify;
+                line-height: 1.8rem;
+            }
+        }
+    }
+
+    .section__testimonio {
+
+        .caja__testimonio {
+
+            margin: 50px 50px;
+
+
+            .caja__titulo {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-bottom: 25px;
+
+                img {
+                    border-radius: 100px;
+                    height: 100px;
+                    margin-right: 15px;
+                }
+
+                .titulo__testimonio {
+                    display: flex;
+                    flex-direction: column;
+
+                    .jerarquia {
+                        font-family: $font2;
+                        font-weight: 600;
+                        letter-spacing: 4px;
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        color: $secundario
+                    }
+
+                    .nombre {
+                        font-family: $font1;
+                        font-weight: 600;
+                        font-size: 2rem;
+                        text-transform: uppercase;
+                        color: $secundario;
+                    }
+                }
+            }
+
+            .texto__testimonio {
+                font-family: $font2;
+                text-align: justify;
+                color: $primario;
+                line-height: 1.8rem;
+
+            }
+        }
+    }
+
+    .section__rincones {
+
+        padding: 25px;
+
+        .section__rincones--titulo {
+            display: flex;
+            border-bottom: 2px solid $terciario;
+            margin-bottom: 25px;
+
+            h4 {
+                font-family: $font1;
+                text-transform: uppercase;
+                font-size: 2rem;
+                font-weight: 600;
+                line-height: 22px;
+                color: $secundario;
+                letter-spacing: 2px;
+            }
+
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 4px;
+            grid-column-start: 1;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            align-content: start;
+            max-width: 700px;
+            margin: 0 auto;
+            transition: all 150ms linear;
+
+            input[type="radio"] {
+                display: none;
+            }
+
+            label {
+                position: relative;
+                display: block;
+                padding-bottom: 60%;
+                margin: 5px;
+                cursor: pointer;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 50% 50%;
+            }
+
+            label:before {
+                border: 1px solid $secundario;
+                content: '';
+                position: absolute;
+                left: -5px;
+                right: -5px;
+                bottom: -5px;
+                top: -5px;
+            }
+
+            img {
+                display: none;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                width: 100%;
+                transition: all 150ms linear;
+            }
+
+            input[name="select"]:checked+label+img {
+                display: block;
+            }
+
+            input[name="select"]:checked+label:before {
+                border: 1px solid $terciario;
+            }
+
+            .img-tab-1 {
+                background-image: url(../img/biblioteca-min.jpg);
+            }
+
+            .img-tab-2 {
+                background-image: url(../img/simu-min.jpg);
+            }
+
+            .img-tab-3 {
+                background-image: url(../img/casino-min.jpg);
+            }
+
+
+        }
+    }
+
+}
+
+@media (min-width: 576px) {
+    
+    .section__secundaria {
+        
+        .accordion {
+            margin: 50px 50px;
+        }
+    }
+}
+
+
+@media (min-width: 1200px){
+
+    .section__secundaria {
+
+        .section__preguntas {
+
+            grid-area: preguntas;
+            
+            .accordion {
+                margin: 50px 50px;
+            }
+        }
+
+        .about__us {
+            margin-top: 50px;
+            grid-area: nosotros;
+        }
+
+        .section__testimonio {
+
+            grid-area: testimonio;
+            
+                .caja__testimonio {
+
+                    border-bottom: 2px solid $terciario;
+
+                    .texto__testimonio {
+                        line-height: 2rem;
+                    }
+                }
+        }
+
+        .section__rincones {
+
+            grid-area: rincones;
+        }
+
+        display: grid;
+        margin-bottom: 100px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "preguntas testimonio"
+        "rincones nosotros";
+
+    }
+
+}

@@ -14,10 +14,9 @@
 </head>
 
 <body>
-    <header>
 
-        <!-- NAVBAR PRINCIPAL -->
-        <nav class="navbar navbar-expand-lg navbar-dark primario">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark primario w-100">
             <div class="container-fluid">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -72,51 +71,29 @@
                 </div>
             </div>
         </nav>
+
+        <section class="navbar__secundario">
+
+            <ul>
+                <a href="#">
+                    <li class="link__menu"><i class="fa-solid fa-book"></i>Biblioteca</li>
+                </a>
+                <a href="#">
+                    <li class="link__menu"><i class="fa-solid fa-anchor"></i>Museo</li>
+                </a>
+                <a href="#">
+                    <li class="link__menu"><i class="fa-solid fa-chalkboard-user"></i>E-lerning</li>
+                </a>
+            </ul>
+
+        </section>
+
     </header>
 
-    <!-- NAVBAR SECUNDARIO -->
-
-    <section class="navbar__secundario shadow-lg">
-
-        <ul>
-            <a href="#">
-                <li class="link__menu"><i class="fa-solid fa-book"></i>Biblioteca</li>
-            </a>
-            <a href="#">
-                <li class="link__menu"><i class="fa-solid fa-anchor"></i>Museo</li>
-            </a>
-            <a href="#">
-                <li class="link__menu"><i class="fa-solid fa-chalkboard-user"></i>E-lerning</li>
-            </a>
-        </ul>
-
-    </section>
-
-    <!-- SECTION PRINCIPAL -->
-
-    <section class="section__principal">
-
-
-
-        <div class="container-fluid">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/cadetes2.jpg" class="d-block w-100" alt="cadetes">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/cadetes3.jpg" class="d-block w-100" alt="cadetes">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/cadetes.jpg" class="d-block w-100" alt="cadetedes">
-                    </div>
-                    <div class="carousel-caption degradado">
-                        <h1><span>Ingresa a la Escuela Naval</span></h1>
-                    </div>
-                </div>
-            </div>
+    <main>
+        <div class="titulo__main">
+            <h1><span>Ingresa a la Escuela</span></h1>
         </div>
-
 
         <div class="tarjetas__ingreso">
             <div class="card card-cuina">
@@ -125,7 +102,7 @@
                     <p class="card-text positivo"><i class="fa-regular fa-circle-check"></i> Ingreso abierto</p>
                     <div class="botones__ingreso">
                         <a href="#" class="btn btn-primary secundario">Inscribirse</a>
-                        <a href="#" class="btn btn-primary secundario">Más info...</a>
+                        <a href="#" class="btn btn-primary secundario">Informacion</a>
                     </div>
                 </div>
             </div>
@@ -136,7 +113,7 @@
                     <p class="card-text negativo"><i class="fa-solid fa-ban"></i> Ingreso cerrado</p>
                     <div class="botones__ingreso">
                         <a href="#" class="btn btn-primary primario deshabilitado">Inscribirse</a>
-                        <a href="#" class="btn btn-primary secundario">Más info...</a>
+                        <a href="#" class="btn btn-primary secundario">Informacion</a>
                     </div>
                 </div>
             </div>
@@ -149,15 +126,11 @@
             <button class="boton__redes"><i class="fa-brands fa-twitter"></i></button>
 
         </div>
-
-    </section>
-
-
-
+    </main>
 
     <section class="section__secundaria">
 
-        <section class="section__preguntas">
+        <div class="section__preguntas">
             <div class="container-fluid">
                 <div class="accordion" id="accordionPanelsStayOpenExample">
                     <div class="accordion-item">
@@ -242,9 +215,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="about__us">
+        <div class="about__us">
             <div class="about__us--caja">
                 <div class="about__us--titulo">
                     <i class="fa-solid fa-bullseye"></i>
@@ -257,9 +230,9 @@
                     y
                     contribuir a la defensa de los intereses nacionales en el mar.</p>
             </div>
-        </section>
+        </div>
 
-        <section class="section__testimonio">
+        <div class="section__testimonio">
             <div class="caja__testimonio">
 
                 <div class="caja__titulo">
@@ -282,36 +255,37 @@
                         su vida.</p>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <div class="section__rincones">
+            <div class="section__rincones--titulo">
+                <h4>Rincones</h4>
+            </div>
+            <div class="gallery">
+
+                <input type="radio" checked="checked" name="select" id="img-tab-1">
+
+                <label for="img-tab-1" class="img-tab-1"></label>
+                <img src="img/biblioteca.jpg">
+
+                <input type="radio" name="select" id="img-tab-2">
+                <label for="img-tab-2" class="img-tab-2"></label>
+                <img src="img/simu.jpg">
+
+                <input type="radio" name="select" id="img-tab-3">
+                <label for="img-tab-3" class="img-tab-3"></label>
+                <img src="img/casino.jpg">
 
 
-        <section class="section__accesos">
-            <div class="caja_accesos">
-                <div class="titulo__acceso">
-                    <a href="#">
-                        <h4>DEPORTES</h4>
-                    </a>
-                </div>
+
             </div>
-            <div class="caja_accesos">
-                <div class="titulo__acceso">
-                    <a href="#">
-                        <h4>HISTORIA</h4>
-                    </a>
-                </div>
-            </div>
-            <div class="caja_accesos">
-                <div class="titulo__acceso">
-                    <a href="#">
-                        <h4>RINCONES</h4>
-                    </a>
-                </div>
-            </div>
-        </section>
+        </div>
 
     </section>
 
-    <footer>.</footer>
+    <footer>
+        <img src="img/min_defensa.png" alt="Ministerio de defensa">
+    </footer>
 
 
     <script src="https://kit.fontawesome.com/337c233b98.js" crossorigin="anonymous"></script>
