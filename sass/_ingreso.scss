@@ -1,0 +1,192 @@
+.main__cadetes {
+    min-height: 60vh;
+    background-image:
+        linear-gradient(to right bottom,
+            rgba(10, 21, 31, 0.8),
+            rgba(20, 60, 105, 0.8)),
+        url('../img/fondo-ingreso-cadetes.jpg');
+
+    background-size: cover;
+    background-position: top;
+    object-fit: cover;
+    position: relative;
+
+    h1 {
+        color: #fff;
+        text-align: center;
+        font-family: $font1;
+        font-size: 2rem;
+        font-weight: 400;
+        padding: 0 25px;
+        padding-top: 50px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        text-decoration: underline;
+        text-decoration-color: $terciario;
+        transform: scale(0.94);
+        animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    }
+
+
+    #tsum-tabs h4 {
+        margin: 15px;
+        line-height: 1.5;
+        font-size: 1.4rem;
+        font-family: $font1;
+        text-transform: uppercase;
+        color: $secundario;
+        font-weight: 600;
+        letter-spacing: 4px;
+    }
+
+    #tsum-tabs p {
+        margin: 0 15px;
+        padding-bottom: 30px;
+        line-height: 2rem;
+        font-size: 14px;
+        font-family: $font2;
+        color: $primario;
+        text-align: justify;
+    }
+
+    #tsum-tabs li {
+        font-family: $font2;
+        font-size: 14px;
+        line-height: 2.4rem;
+        color: $primario;
+    }
+
+    #tsum-tabs ol {
+        padding-bottom: 30px;
+    }
+
+    #tsum-tabs article {
+        min-width: 320px;
+        max-width: 90vw;
+        padding-top: 25px;
+        margin: 0 auto;
+        padding-bottom: 150px;
+    }
+
+    #tsum-tabs section {
+        display: none;
+        padding: 20px 10px 25px;
+        border-top: 3px solid $terciario;
+        background-color: rgba(255, 255, 255, 0.815);
+        height: auto;
+
+        .alert {
+            color: $secundario;
+            font-family: $font2;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 2px;
+
+            i {
+                font-size: 16px;
+                color: $secundario;
+            }
+        }
+
+        .alert-danger {
+            .negativo {
+                color: darkgrey;
+                font-family: $font2;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 2px;
+
+                i {
+                    font-size: 16px;
+                    color: darkgrey;
+                }
+            }
+        }
+
+    }
+
+    #tsum-tabs input {
+        display: none;
+    }
+
+    #tsum-tabs label {
+        display: inline-block;
+        margin: 0 0 4px;
+        font-family: $font1;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        padding: 15px 25px;
+        text-align: center;
+        color: #fff;
+        background-color: $secundario;
+        box-sizing: border-box;
+        border: 1px solid transparent;
+    }
+
+    #tsum-tabs label:before {
+        margin-right: 10px;
+    }
+
+
+
+    #tsum-tabs label:hover {
+        color: $terciario;
+        cursor: pointer;
+    }
+
+    #tsum-tabs input:checked+label {
+        color: #ddd;
+        background-color: $primario;
+    }
+
+    #tsum-tabs .cadetes__descarga {
+        display: flex;
+
+        .btn {
+            padding: 5px;
+            margin: 5px;
+            font-size: 14px;
+        }
+    }
+
+    #tsum-tabs #tab1:checked~#content1,
+    #tsum-tabs #tab2:checked~#content2,
+    #tsum-tabs #tab3:checked~#content3,
+    #tsum-tabs #tab4:checked~#content4 {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .main__cadetes {
+
+        background-image:
+            linear-gradient(to right bottom,
+                rgba(10, 21, 31, 1),
+                rgba(20, 60, 105, 1));
+
+        article {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 25px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .main__cadetes {
+
+        #tsum-tabs section {
+            padding: 50px 100px;
+        }
+    }
+}
+
+.profesionales {
+    background-image:
+        linear-gradient(to right bottom,
+            rgba(10, 21, 31, 0.8),
+            rgba(20, 60, 105, 0.8)),
+        url('../img/fondo-ingreso-profesionales.jpg');
+}

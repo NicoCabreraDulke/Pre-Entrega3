@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../style/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Escuela Naval Militar Rio Santiago</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark primario w-100">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a href="../index.html"><img src="../img/logo.png" alt="logo escuela" height="70px"></a>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ancla">
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Formación Académica</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="formacion.html">Formación del cadete</a></li>
+                                <li><a class="dropdown-item" href="comando.html">Escalafón Comando Naval</a></li>
+                                <li><a class="dropdown-item" href="intendencia.html">Escalafón Intendencia</a></li>
+                                <li><a class="dropdown-item" href="cursos.html">Cursos Especiales</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Ingreso</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="cadetes.html">Ingreso de cadetes</a></li>
+                                <li><a class="dropdown-item" href="profesionales.html">Ingreso de Profesionales</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">La escuela</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Reseña histórica</a></li>
+                                <li><a class="dropdown-item" href="#">Rincones de la Escuela</a></li>
+                                <li><a class="dropdown-item" href="#">Plana Mayor</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="navbar__secundario">
+
+            <ul>
+                <a href="#">
+                    <li class="link__menu"><i class="fa-solid fa-book"></i>Biblioteca</li>
+                </a>
+                <a href="#">
+                    <li class="link__menu"><i class="fa-solid fa-anchor"></i>Museo</li>
+                </a>
+                <a href="#">
+                    <li class="link__menu"><i class="fa-solid fa-chalkboard-user"></i>E-lerning</li>
+                </a>
+            </ul>
+
+        </section>
+
+    </header>
+
+    <section class="main__cadetes">
+        <h1>Ingreso de cadetes</h1>
+
+        <div id="tsum-tabs">
+
+            <article>
+
+                <input id="tab1" type="radio" name="tabs" checked>
+                <label for="tab1">Información general</label>
+
+                <input id="tab2" type="radio" name="tabs">
+                <label for="tab2">Convocados 2023</label>
+
+                <input id="tab3" type="radio" name="tabs">
+                <label for="tab3">Material de apoyo</label>
+
+                <!--input id="tab4" type="radio" name="tabs">
+                <label for="tab4">Espacio vacio</label-->
+
+                <section id="content1">
+
+                    <!--div class="alert alert-success" role="alert">
+                        <i class="fa-regular fa-circle-check"></i> Abierta la inscripción para la incorporación de
+                        cadetes.
+                    </div-->
+
+                    <div class="alert alert-danger" role="alert">
+                        <i class="fa-solid fa-ban"></i></i> Inscripción cerrada momentáneamente.
+                    </div>
+
+                    
+                    <h4>Requisitos</h4>
+
+                    <ol>
+                        <li>Ser argentino/a nativo/a o por opción.</li>
+                        <li>Edad 22 años maximo al 01 de marzo al año de ingreso, soltero/a.</li>
+                        <li>Secundario completo o cursando el último año.</li>
+                        <li>Aprobar el examen de ingreso.</li>
+                    </ol>
+
+                    <h4>Misión</h4>
+
+                    <p>Formar ética, militar, académica, profesional y físicamente a los futuros oficiales de la Armada
+                        en la conducción de personal, la administración y el empleo de sistemas navales a fin de
+                        prepararlos para desempeñarse en el ejercicio de las funciones y responsabilidades
+                        correspondientes a su competencia y contribuir a la defensa de los intereses nacionales en el
+                        mar.</p>
+
+                    <h4>La carrera</h4>
+
+                    <p>Es una carrera profesional para ambos sexos, con una duración de cinco años, los cuatro primeros
+                        como cadete en la Escuela y el quinto como Guardiamarina en Comisión, realizando el viaje a
+                        bordo de la Fragata ARA “Libertad”. La carrera es gratuita , percibiendo el cadete un haber
+                        mensual , que a partir del quinto año se percibe el sueldo correspondiente a la jerarquía de
+                        Guardiamarina. El régimen es interno, de lunes a viernes, con los fines de semana libres, salvo
+                        en situaciones particulares (embarcos, campañas y otras actividades profesionales). Se puede
+                        optar por integrar el Cuerpo de Comando, como Oficial Naval o Infante de Marina, o el Cuerpo
+                        Profesional como Oficial de Intendencia.</p>
+                        
+                        
+                    <h4>Actividades</h4>
+
+                    <p>A la actividad académica propia de una universidad, se le agrega la formación específicamente
+                        militar en sus múltiples aspectos. Periódicamente se realizan prácticas profesionales en
+                        Unidades Navales y de Infantería de Marina, realizando embarcos y campañas donde se amalgaman
+                        los conocimientos teóricos del aula con la realidad de los buques y batallones de la Armada
+                        Argentina. La destreza física es una de las características del cadete naval. Una extensa
+                        variedad de actividades deportivas tradicionales (fútbol, rugby, hockey, atletismo y gimnasia)
+                        se entremezcla con la propuesta de las actividades náuticas (vela,remo y natación) y los
+                        deportes militares, incluyendo tiro, supervivencia, artes marciales, esgrima e instrucción de
+                        combate. La vida en la Escuela Naval une un alto nivel de excelencia educativa con sana
+                        camaradería en un marco de pureza natural dada por la Isla Río Santiago, cercana a la ciudad de
+                        La Plata, en la Provincia de Buenos Aires</p>
+
+                        <h4>Material de descarga</h4>
+
+                        <div class="cadetes__descarga">
+                            <a class="btn btn-primary" href="#" role="button">
+                                Declaración jurada
+                            </a>
+                            <a class="btn btn-primary" href="#" role="button">
+                                Guía de ingreso
+                            </a>
+                            <a class="btn btn-primary" href="#" role="button">
+                                Directivas de presentación
+                            </a>
+                        </div>
+    
+
+                </section>
+
+                <section id="content2">
+                    <h4>
+                        Directivas para convocados 2023
+                    </h4>
+                </section>
+
+                <section id="content3">
+                    <h4>
+                        Material de apoyo
+                    </h4>
+
+                    <div class="tabla">
+                        
+                        <div class="span-celeste"><i class="fa-brands fa-google-drive"></i></i> Comprensión y Producción de textos</div>
+                        <div class="span-celeste"><i class="fa-brands fa-google-drive"></i></i> Física</div>
+                        <div class="span-celeste"><i class="fa-brands fa-google-drive"></i></i> Matematica</div>
+                        <div class="span-celeste"><i class="fa-brands fa-google-drive"></i></i> Química</div>
+                        <div class="span-celeste"><i class="fa-brands fa-google-drive"></i></i> Trigonometría</div>
+                        <div class="span-celeste"><i class="fa-brands fa-google-drive"></i></i> Programas de Exámen</div>
+                        
+                    </div>
+                </section>
+
+                <!--section id="content4">
+                    <p>
+                        ESPACIO VACIO
+                    </p>
+                </section-->
+
+            </article>
+
+        </div>
+    </section>
+
+
+
+    <footer>
+
+        <div class="caja__logos">
+            <img src="../img/150.png" alt="150 aniversario" class="caja__logos--img">
+            <img src="../img/armada_argentina.png" alt="Armada Argentina" class="caja__logos--img">
+            <img src="../img/min_defensa.png" alt="Ministerio de defensa" class="caja__logos--img">
+        </div>
+
+        <div class="caja__footer">
+            <div class="caja__footer--contacto">
+
+                <div class="footer__contacto--info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="contacto__info--text">
+                        <h4>UBICACION</h4>
+                        <p>Río Santiago, Provincia de Buenos Aires</p>
+                        <p>Google maps (5455+MC Ensenada)</p>
+                    </div>
+                </div>
+
+                <div class="footer__contacto--info">
+                    <i class="far fa-envelope-open"></i>
+                    <div class="contacto__info--text">
+                        <h4>EMAIL</h4>
+                        <p>ingresoescuelanaval@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="footer__contacto--info">
+                    <i class="fas fa-phone"></i>
+                    <div class="contacto__info--text">
+                        <h4>TELEFONO</h4>
+                        <p>(0221) 468-0419 (0221) 468 - 0345</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="caja__footer--copy">
+                <p>Copyright &copy; Escuela Naval Rio Santiago, Departamento de Comunicación</p>
+
+            </div>
+        </div>
+
+
+
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/337c233b98.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

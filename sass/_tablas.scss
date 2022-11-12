@@ -1,0 +1,113 @@
+.tabla {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 1rem;
+    font-family: $font2;
+    color: $secundario;
+}
+
+.tabla>div {
+    padding: 8px 4px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 6px;
+}
+
+.tabla-de2 {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 15px;
+    font-size: 0.8rem;
+    font-family: $font2;
+    cursor: default;
+}
+
+.tabla-de2>div {
+    padding: 8px 4px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 6px;
+}
+
+.tabla-referencia {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 15px;
+    font-size: 0.8rem;
+    font-family: $font2;
+    cursor: default;
+}
+
+.tabla-referencia>div {
+    padding: 8px 4px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 6px;
+}
+
+.span-celeste {
+    background-color: $claro1;
+}
+
+.span-naranja {
+    background-color: $claro2;
+}
+
+.span-verde {
+    background-color: $claro3;
+}
+
+.span-violeta {
+    background-color: $claro4;
+}
+
+.span-celeste:hover {
+    background-color: $secundario;
+    color: #fff
+}
+
+.titulo-tabla {
+    width: 80%;
+    margin: 0 auto;
+    background-color: $secundario;
+    height: 3rem;
+    color: #fff;
+    font-family: $font1;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.titulo-tabla2 {
+    width: 80%;
+    margin: 0 auto;
+    background-color: $secundario;
+    height: 3rem;
+    color: #fff;
+    font-family: $font1;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+    .tabla {
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+    }
+}

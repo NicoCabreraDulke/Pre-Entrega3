@@ -216,7 +216,7 @@ main .titulo__main h1 {
   font-size: 2.5rem;
   font-weight: 400;
   padding: 0 25px;
-  padding-top: 50px;
+  padding-top: 25px;
   text-transform: uppercase;
   letter-spacing: 8px;
   text-decoration: underline;
@@ -553,6 +553,158 @@ main .redes .boton__redes:hover {
     grid-area: rincones;
   }
 }
+.main__cadetes {
+  min-height: 60vh;
+  background-image: linear-gradient(to right bottom, rgba(10, 21, 31, 0.8), rgba(20, 60, 105, 0.8)), url("../img/fondo-ingreso-cadetes.jpg");
+  background-size: cover;
+  background-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+.main__cadetes h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 0 25px;
+  padding-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #1b94cc;
+          text-decoration-color: #1b94cc;
+  transform: scale(0.94);
+  -webkit-animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+          animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+.main__cadetes #tsum-tabs h4 {
+  margin: 15px;
+  line-height: 1.5;
+  font-size: 1.4rem;
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  color: #143c69;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+.main__cadetes #tsum-tabs p {
+  margin: 0 15px;
+  padding-bottom: 30px;
+  line-height: 2rem;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #0a151f;
+  text-align: justify;
+}
+.main__cadetes #tsum-tabs li {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 2.4rem;
+  color: #0a151f;
+}
+.main__cadetes #tsum-tabs ol {
+  padding-bottom: 30px;
+}
+.main__cadetes #tsum-tabs article {
+  min-width: 320px;
+  max-width: 90vw;
+  padding-top: 25px;
+  margin: 0 auto;
+  padding-bottom: 150px;
+}
+.main__cadetes #tsum-tabs section {
+  display: none;
+  padding: 20px 10px 25px;
+  border-top: 3px solid #1b94cc;
+  background-color: rgba(255, 255, 255, 0.815);
+  height: auto;
+}
+.main__cadetes #tsum-tabs section .alert {
+  color: #143c69;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.main__cadetes #tsum-tabs section .alert i {
+  font-size: 16px;
+  color: #143c69;
+}
+.main__cadetes #tsum-tabs section .alert-danger .negativo {
+  color: darkgrey;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.main__cadetes #tsum-tabs section .alert-danger .negativo i {
+  font-size: 16px;
+  color: darkgrey;
+}
+.main__cadetes #tsum-tabs input {
+  display: none;
+}
+.main__cadetes #tsum-tabs label {
+  display: inline-block;
+  margin: 0 0 4px;
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 15px 25px;
+  text-align: center;
+  color: #fff;
+  background-color: #143c69;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+}
+.main__cadetes #tsum-tabs label:before {
+  margin-right: 10px;
+}
+.main__cadetes #tsum-tabs label:hover {
+  color: #1b94cc;
+  cursor: pointer;
+}
+.main__cadetes #tsum-tabs input:checked + label {
+  color: #ddd;
+  background-color: #0a151f;
+}
+.main__cadetes #tsum-tabs .cadetes__descarga {
+  display: flex;
+}
+.main__cadetes #tsum-tabs .cadetes__descarga .btn {
+  padding: 5px;
+  margin: 5px;
+  font-size: 14px;
+}
+.main__cadetes #tsum-tabs #tab1:checked ~ #content1,
+.main__cadetes #tsum-tabs #tab2:checked ~ #content2,
+.main__cadetes #tsum-tabs #tab3:checked ~ #content3,
+.main__cadetes #tsum-tabs #tab4:checked ~ #content4 {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .main__cadetes {
+    background-image: linear-gradient(to right bottom, rgb(10, 21, 31), rgb(20, 60, 105));
+  }
+  .main__cadetes article {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+  }
+}
+@media (min-width: 768px) {
+  .main__cadetes #tsum-tabs section {
+    padding: 50px 100px;
+  }
+}
+.profesionales {
+  background-image: linear-gradient(to right bottom, rgba(10, 21, 31, 0.8), rgba(20, 60, 105, 0.8)), url("../img/fondo-ingreso-profesionales.jpg");
+}
+
 footer {
   background-color: #0a151f;
   padding: 50px;
@@ -567,7 +719,7 @@ footer .caja__logos {
   border-bottom: 2px solid #1b94cc;
   padding-bottom: 50px;
 }
-footer .caja__logos .caja__logos-img {
+footer .caja__logos .caja__logos--img {
   width: 200px;
   padding: 25px 0;
 }
@@ -614,16 +766,649 @@ footer .caja__footer .caja__footer--copy {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    margin: 25px 0;
   }
-  footer .caja__logos .caja__logos-img {
-    width: 250px;
-    padding: 40px;
+  footer .caja__logos .caja__logos--img {
+    width: 30%;
+    padding: 15px;
   }
 }
 @media (min-width: 1200px) {
+  footer .caja__logos .caja__logos--img {
+    width: 247.5px;
+  }
   footer .caja__footer .caja__footer--contacto {
     flex-direction: row;
     align-items: flex-start;
+  }
+}
+.main__comando {
+  height: 35vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right bottom, rgba(10, 21, 31, 0.8), rgba(20, 60, 105, 0.8)), url("../img/comando.jpg");
+}
+.main__comando h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.main__intendencia {
+  height: 35vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right bottom, rgba(10, 21, 31, 0.8), rgba(20, 60, 105, 0.8)), url("../img/intendencia2.jpg");
+}
+.main__intendencia h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.main__cursos {
+  height: 35vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right bottom, rgba(10, 21, 31, 0.8), rgba(20, 60, 105, 0.8)), url("../img/cursos.jpg");
+}
+.main__cursos h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.caja__info {
+  padding-bottom: 50px;
+}
+.caja__info .caja__info--intro {
+  grid-area: intro;
+  padding: 25px;
+}
+.caja__info .caja__info--intro h2 {
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  color: #143c69;
+  letter-spacing: 2px;
+  padding-bottom: 25px;
+}
+.caja__info .caja__info--intro strong {
+  color: #143c69;
+}
+.caja__info .caja__info--intro p {
+  font-family: "Roboto", sans-serif;
+  color: #0a151f;
+}
+.caja__info .caja__info--galeria {
+  grid-area: galeria;
+  margin: 25px;
+  padding: 25px 0;
+  border-bottom: 2px solid #1b94cc;
+  border-top: 2px solid #1b94cc;
+}
+.caja__info .caja__info--galeria .gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4px;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  align-content: start;
+  min-width: 300px;
+  margin: 0 auto;
+  transition: all 150ms linear;
+}
+.caja__info .caja__info--galeria .gallery input[type=radio] {
+  display: none;
+}
+.caja__info .caja__info--galeria .gallery label {
+  position: relative;
+  display: block;
+  padding-bottom: 60%;
+  margin: 5px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.caja__info .caja__info--galeria .gallery label:before {
+  border: 1px solid #143c69;
+  content: "";
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  top: -5px;
+}
+.caja__info .caja__info--galeria .gallery img {
+  display: none;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%;
+  transition: all 150ms linear;
+}
+.caja__info .caja__info--galeria .gallery input[name=select]:checked + label + img {
+  display: block;
+}
+.caja__info .caja__info--galeria .gallery input[name=select]:checked + label:before {
+  border: 1px solid #1b94cc;
+}
+.caja__info .caja__info--galeria .gallery .img-tab-1 {
+  background-image: url(../img/c-1.jpg);
+}
+.caja__info .caja__info--galeria .gallery .img-tab-2 {
+  background-image: url(../img/c-2.jpg);
+}
+.caja__info .caja__info--galeria .gallery .img-tab-3 {
+  background-image: url(../img/c-3.jpg);
+}
+.caja__info .caja__info--galeria .gallery .img-tab-4 {
+  background-image: url(../img/cur-1.jpg);
+}
+.caja__info .caja__info--galeria .gallery .img-tab-5 {
+  background-image: url(../img/cur-2.jpg);
+}
+.caja__info .caja__info--galeria .gallery .img-tab-6 {
+  background-image: url(../img/cur-3.jpg);
+}
+.caja__info .caja__info--parrafo {
+  grid-area: parrafo;
+  padding: 25px;
+}
+.caja__info .caja__info--parrafo h4 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+  color: #143c69;
+  letter-spacing: 2px;
+  padding-bottom: 50px;
+}
+.caja__info .caja__info--parrafo p {
+  font-family: "Roboto", sans-serif;
+  color: #0a151f;
+  text-align: justify;
+}
+.caja__info .caja__info--parrafo2 {
+  grid-area: parrafo2;
+  padding: 25px;
+}
+.caja__info .caja__info--parrafo2 h4 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+  color: #143c69;
+  letter-spacing: 2px;
+  padding-bottom: 50px;
+}
+.caja__info .caja__info--parrafo2 p {
+  font-family: "Roboto", sans-serif;
+  color: #0a151f;
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .caja__info {
+    padding: 50px 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "galeria intro" "parrafo parrafo" "parrafo2 parrafo2";
+  }
+  .caja__info .caja__info--galeria {
+    max-width: 390px;
+    min-height: 290px;
+    border-bottom: none;
+  }
+}
+@media (min-width: 1200px) {
+  .caja__info {
+    padding: 50px 150px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "galeria intro" "galeria parrafo" "galeria parrafo2";
+  }
+}
+.tabla {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: #143c69;
+}
+
+.tabla > div {
+  padding: 8px 4px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-right: 6px;
+}
+
+.tabla-de2 {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 15px;
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  cursor: default;
+}
+
+.tabla-de2 > div {
+  padding: 8px 4px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-right: 6px;
+}
+
+.tabla-referencia {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 15px;
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  cursor: default;
+}
+
+.tabla-referencia > div {
+  padding: 8px 4px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-right: 6px;
+}
+
+.span-celeste {
+  background-color: rgba(139, 196, 223, 0.4862745098);
+}
+
+.span-naranja {
+  background-color: rgba(223, 184, 139, 0.4862745098);
+}
+
+.span-verde {
+  background-color: rgba(180, 223, 139, 0.4862745098);
+}
+
+.span-violeta {
+  background-color: rgba(206, 139, 223, 0.4862745098);
+}
+
+.span-celeste:hover {
+  background-color: #143c69;
+  color: #fff;
+}
+
+.titulo-tabla {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #143c69;
+  height: 3rem;
+  color: #fff;
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.titulo-tabla2 {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #143c69;
+  height: 3rem;
+  color: #fff;
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+  .tabla {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.tabla__materias .tabla-materias {
+  display: grid;
+  width: 60%;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  color: #0a151f;
+  margin-bottom: 50px;
+}
+.tabla__materias .tabla-materias > div {
+  padding: 8px 4px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-right: 6px;
+}
+.tabla__materias .tabla-de2-materias {
+  display: grid;
+  width: 60%;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 15px;
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 50px;
+}
+.tabla__materias .tabla-de2-materias > div {
+  padding: 8px 4px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-right: 6px;
+}
+.tabla__materias .tabla-referencia {
+  display: grid;
+  width: 60%;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 15px;
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  color: #0a151f;
+  cursor: default;
+}
+.tabla__materias .tabla-referencia > div {
+  padding: 8px 4px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-right: 6px;
+}
+.tabla__materias .div-celeste {
+  background-color: rgba(139, 196, 223, 0.4862745098);
+}
+.tabla__materias .div-celeste:hover {
+  color: #0a151f;
+}
+.tabla__materias .div-naranja {
+  background-color: rgba(223, 184, 139, 0.4862745098);
+}
+.tabla__materias .div-verde {
+  background-color: rgba(180, 223, 139, 0.4862745098);
+}
+.tabla__materias .div-violeta {
+  background-color: rgba(206, 139, 223, 0.4862745098);
+}
+.tabla__materias .titulo-tabla {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #143c69;
+  height: 3rem;
+  color: #fff;
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .tabla__materias .tabla-materias {
+    font-size: 0.7rem;
+    width: 80%;
+  }
+  .tabla__materias .tabla-de2-materias {
+    font-size: 0.7rem;
+    width: 80%;
+  }
+  .tabla__materias .tabla-referencia {
+    width: 80%;
+  }
+  .tabla__materias .titulo-tabla {
+    width: 80%;
+  }
+}
+
+.main__basico {
+  margin: 50px 25px;
+  margin-top: 100px;
+}
+.main__basico h1 {
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  color: #143c69;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #1b94cc;
+  display: inline-block;
+  padding-bottom: 15px;
+  margin-bottom: 45px;
+}
+.main__basico p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: #0a151f;
+  text-align: justify;
+}
+.main__basico p strong {
+  color: #143c69;
+}
+
+@media (min-width: 576px) {
+  .main__basico {
+    margin: 50px 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .main__basico {
+    margin: 80px 250px;
+  }
+}
+.section__plan {
+  margin: 0 auto;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+.section__plan h2 {
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  color: #143c69;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #1b94cc;
+  display: inline-block;
+  padding-bottom: 15px;
+  margin-bottom: 45px;
+}
+.section__plan .tabla__plan {
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr 3fr 3fr;
+  grid-template-rows: 1fr 4fr 1fr 4fr;
+  grid-template-areas: "titulo1 titulo1 titulo1 titulo1 titulo1" "caja1 caja2 caja3 caja4 caja5" "titulo2 titulo2 titulo2 titulo2 titulo2" "caja6 caja6 caja6 caja7 caja8";
+  gap: 1rem;
+}
+.section__plan .tabla__plan .tabla__plan--titulo1 {
+  background-color: #143c69;
+  color: #fff;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  padding: 3px 15px;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: titulo1;
+}
+.section__plan .tabla__plan .caja__1 {
+  grid-area: caja1;
+  border: 2px solid #143c69;
+  color: #143c69;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.section__plan .tabla__plan .caja__2 {
+  grid-area: caja2;
+  background-color: #1b94cc;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+}
+.section__plan .tabla__plan .caja__3 {
+  grid-area: caja3;
+  border: 2px solid #143c69;
+  color: #143c69;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.section__plan .tabla__plan .caja__4 {
+  grid-area: caja4;
+  border: 2px solid #143c69;
+  color: #143c69;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.section__plan .tabla__plan .caja__5 {
+  grid-area: caja5;
+  background-color: #143c69;
+  color: #fff;
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.section__plan .tabla__plan .tabla__plan--titulo2 {
+  background-color: #143c69;
+  color: #fff;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  padding: 3px 15px;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: titulo2;
+}
+.section__plan .tabla__plan .caja__6 {
+  grid-area: caja6;
+  border: 2px solid #143c69;
+  color: #143c69;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.section__plan .tabla__plan .caja__7 {
+  grid-area: caja7;
+  border: 2px solid #143c69;
+  color: #143c69;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.section__plan .tabla__plan .caja__8 {
+  grid-area: caja8;
+  background-color: #143c69;
+  color: #fff;
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+@media (max-width: 1200px) {
+  .section__plan {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .section__plan .tabla__plan {
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=styles.css.map */

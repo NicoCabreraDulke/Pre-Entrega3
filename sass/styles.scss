@@ -6,109 +6,187 @@
 @import "spananimation";
 @import "main";
 @import "secundaria";
+@import "ingreso";
+@import "footer";
+@import "comando-intendencia";
+@import "tablas";
+@import "tablas-materias";
+@import "titular";
+
+.main__basico {
+
+    margin: 50px 25px;
+    margin-top: 100px;
 
 
-footer {
-    background-color: $primario;
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
+    h1 {
+        @include titular;
 
-    .caja__logos {
-        display: flex;
-        flex-direction: column;
-        border-bottom: 2px solid $terciario;
-        padding-bottom: 50px;
+    }
 
-        .caja__logos-img {
-            width: 200px;
-            padding: 25px 0;
+    p {
+        font-family: $font2;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        color: $primario;
+        text-align: justify;
 
+        strong {
+            color: $secundario;
         }
     }
 
-    .caja__footer {
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+}
 
-        .caja__footer--contacto {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 25px;
-
-            .footer__contacto--info {
-                padding: 15px;
-                color: #fff;
-                display: flex;
-
-
-                i {
-                    color: $terciario;
-                    line-height: 2rem;
-                    font-size: 2rem;
-                    padding-right: 1rem;
-                }
-
-                .contacto__info--text {
-                    
-                    width: 90%;
-
-                    h4 {
-                        font-family: $font1;
-                        letter-spacing: 2px;
-                    }
-                    
-                    p {
-                        font-family: $font2;
-                    }
-                }
-            }
-        }
-
-        .caja__footer--copy {
-            margin-top: 15px;
-            text-align: center;
-            color: darkgray
-        }
+@media (min-width:576px) {
+    .main__basico {
+        margin: 50px 50px;
     }
 }
 
-@media (min-width: 576px) {
+@media (min-width:1200px) {
+    .main__basico {
+        margin: 80px 250px;
+    }
+}
 
-    footer {
+.section__plan {
+    margin: 0 auto;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
 
-        .caja__logos {
-            flex-direction: row;
+    h2 {
+        @include titular;
+    }
+
+    .tabla__plan {
+
+        margin-bottom: 50px;
+
+        @mixin titulo-tabla {
+
+            background-color: $secundario;
+            color: #fff;
+            font-family: $font1;
+            font-size: 1.8rem;
+            letter-spacing: 3px;
+            padding: 3px 15px;
+            text-align: center;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            display: flex;
             justify-content: center;
             align-items: center;
-            width: 80%;
-
-            .caja__logos-img {
-                width: 250px;
-                padding: 40px;
-            }
         }
 
-        .caja__footer {
+        @mixin borde {
+            border: 2px solid $secundario;
+            color: $secundario;
+            box-sizing: border-box;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
         }
+
+        @mixin diploma {
+            background-color: $secundario;
+            color: #fff;
+            font-family: $font1;
+            letter-spacing: 2px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+        }
+
+
+
+        .tabla__plan--titulo1 {
+            @include titulo-tabla;
+            grid-area: titulo1;
+        }
+
+        .caja__1 {
+            grid-area: caja1;
+            @include borde;
+        }
+
+        .caja__2 {
+            grid-area: caja2;
+            background-color: $terciario;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .caja__3 {
+            grid-area: caja3;
+            @include borde;
+        }
+
+        .caja__4 {
+            grid-area: caja4;
+            @include borde;
+        }
+
+        .caja__5 {
+            grid-area: caja5;
+            @include diploma;
+        }
+
+        .tabla__plan--titulo2 {
+            @include titulo-tabla;
+            grid-area: titulo2;
+        }
+
+        .caja__6 {
+            grid-area: caja6;
+            @include borde;
+        }
+
+        .caja__7 {
+            grid-area: caja7;
+            @include borde;
+        }
+
+        .caja__8 {
+            grid-area: caja8;
+            @include diploma;
+        }
+
+        display: grid;
+        grid-template-columns: 3fr 2fr 3fr 3fr 3fr;
+        grid-template-rows: 1fr 4fr 1fr 4fr;
+        grid-template-areas: "titulo1 titulo1 titulo1 titulo1 titulo1"
+        "caja1 caja2 caja3 caja4 caja5"
+        "titulo2 titulo2 titulo2 titulo2 titulo2"
+        "caja6 caja6 caja6 caja7 caja8";
+        gap: 1rem;
+
     }
 }
 
-@media (min-width: 1200px) {
+@media (max-width:1200px) {
+    .section__plan {
+        width: 90%;
+    }
+}
 
-    footer {
+@media (max-width:768px) {
+    .section__plan {
 
-        .caja__footer {
-            .caja__footer--contacto {
-                flex-direction: row;
-                align-items: flex-start;
-            }
+        .tabla__plan {
+            display: flex;
+            flex-direction: column;
         }
     }
 }

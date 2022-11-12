@@ -1,0 +1,14 @@
+@mixin titular {
+    font-family: $font1;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.2rem;
+    color: $secundario;
+    letter-spacing: 2px;
+    border-bottom: 2px solid $terciario;
+    display: inline-block;
+    padding-bottom: 15px;
+    margin-bottom: 45px;
+
+}

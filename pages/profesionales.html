@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../style/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Escuela Naval Militar Rio Santiago</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark primario w-100">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a href="../index.html"><img src="../img/logo.png" alt="logo escuela" height="70px"></a>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ancla">
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Formación Académica</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="formacion.html">Formación del cadete</a></li>
+                                <li><a class="dropdown-item" href="comando.html">Escalafón Comando Naval</a></li>
+                                <li><a class="dropdown-item" href="intendencia.html">Escalafón Intendencia</a></li>
+                                <li><a class="dropdown-item" href="cursos.html">Cursos Especiales</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Ingreso</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="cadetes.html">Ingreso de cadetes</a></li>
+                                <li><a class="dropdown-item" href="profesionales.html">Ingreso de Profesionales</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">La escuela</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Reseña histórica</a></li>
+                                <li><a class="dropdown-item" href="#">Rincones de la Escuela</a></li>
+                                <li><a class="dropdown-item" href="#">Plana Mayor</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="navbar__secundario">
+
+            <ul>
+                <a href="#">
+                    <li class="link__menu"><i class="fa-solid fa-book"></i>Biblioteca</li>
+                </a>
+                <a href="#">
+                    <li class="link__menu"><i class="fa-solid fa-anchor"></i>Museo</li>
+                </a>
+                <a href="#">
+                    <li class="link__menu"><i class="fa-solid fa-chalkboard-user"></i>E-lerning</li>
+                </a>
+            </ul>
+
+        </section>
+
+    </header>
+
+    <section class="main__cadetes profesionales">
+        <h1>Ingreso de profesionales</h1>
+
+        <div id="tsum-tabs">
+
+            <article>
+
+                <input id="tab1" type="radio" name="tabs" checked>
+                <label for="tab1">Información general</label>
+
+                <input id="tab2" type="radio" name="tabs">
+                <label for="tab2">Carreras convocadas</label>
+
+                <input id="tab3" type="radio" name="tabs">
+                <label for="tab3">Programas</label>
+
+                <!--input id="tab4" type="radio" name="tabs">
+                <label for="tab4">Espacio vacio</label-->
+
+                <section id="content1">
+
+                    <div class="alert alert-success" role="alert">
+                        <i class="fa-regular fa-circle-check"></i> Abierta la inscripción para la incorporación de
+                        Profesionales.
+                    </div>
+
+                    <!--div class="alert alert-danger" role="alert">
+                        <i class="fa-solid fa-ban"></i></i> Inscripción cerrada momentáneamente.
+                    </div-->
+
+
+                    <h4>Requisitos</h4>
+
+                    <ol>
+                        <li>Ser argentino/a nativo/a o por opción.</li>
+                        <li>Menor de 31 años al 31 de diciembre del año de inscripción.</li>
+                        <li>Para abogados: tener 30 años como maximo al 1° de marzo del año de incorporación (DECRETO
+                            1715/11).</li>
+                        <li>Título universitario y certificado analítico.</li>
+                        <li>Resultar seleccionado en el concurso específico.</li>
+                        <li>Para médicos e ingenieros: menor de 35 años al 31 de diciembre del año de inscripción.</li>
+                        <li>Para Incorporacion por tiempo determinado (IPD) Tener 30 años de edad como máximo a la fecha
+                            de ingreso</li>
+                    </ol>
+
+                    <h4>Misión</h4>
+
+                    <p>Formar ético y moral, militar, profesional y físicamente a los jóvenes profesionales
+                        universitarios argentinos que deseen ser Oficiales del Cuerpo Profesional de la Armada Argentina
+                        a fin de prepararlos para desempeñarse en el ejercicio de las funciones y responsabilidades
+                        correspondientes a su competencia.</p>
+
+                    <h4>La carrera</h4>
+
+                    <p>Consiste en un curso llamado de Integración Naval cuya duración es de aproximadamente siete
+                        meses, se realiza en la Escuela Naval Militar (Rio Santiago) y en la Escuela de Oficiales de la
+                        Armada (Puerto Belgrano). Cada año se determinan las vacantes por profesión. El regimen del
+                        curso es interno de lunes a viernes, con los fines de semana libres. Al egreso los oficiales son
+                        destinados a prestar servicios en distintas unidades con el grado de Teniente de Fragata, el
+                        alta definitiva como oficial se obtiene luego de servicios satisfactorios por tres años.</p>
+
+
+                    <h4>Actividades</h4>
+
+                    <p>Cursado de materias profesionales en un nivel de exigencia universitario. Prácticas profesionales
+                        en unidades navales, aeronavales, de Infantería de Marina, asesorías jurídicas, talleres y
+                        hospitales navales. Práctica de gimnasia, deportes, defensa personal y de actividades náuticas y
+                        militares.</p>
+
+                    <h4>Material de descarga</h4>
+
+                    <div class="cadetes__descarga">
+                        <a class="btn btn-primary" href="#" role="button">
+                            <i class="fa-regular fa-file-pdf"></i> Declaración jurada
+                        </a>
+                        <a class="btn btn-primary" href="#" role="button">
+                            <i class="fa-regular fa-file-pdf"></i> Guía de ingreso
+                        </a>
+                        <a class="btn btn-primary" href="#" role="button">
+                            <i class="fa-regular fa-file-pdf"></i> Directivas de presentación
+                        </a>
+                    </div>
+
+
+                </section>
+
+                <section id="content2">
+                    <h4>
+                        Carreras convocadas
+                    </h4>
+
+                    <div class="tabla">
+
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> ARQUITECTOS</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> BIOQUÍMICO/ LICENCIADO EN BIOQUÍMICA/ DOCTOR EN BIOQUÍMICA</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> CONTADOR PÚBLICO NACIONAL</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> FARMACÉUTICO/ LICENCIADO EN CIENCIAS FARMACÉUTICAS/ DOCTOR EN FARMACIA</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> INGENIERO AERONÁUTICO</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> INGENIERO CIVIL</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> INGENIERO ELECTRICISTA</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> INGENIERO ELECTRICISTA (ORIENTACIÓN ELECTRÓNICA)</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> INGENIERO ELECTROMECÁNICO (ORIENTACIÓN ELECTRÓNICA)</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> INGENIERO ELECTRÓNICO (ORIENTACIÓN CONTROL TELECOMUNICACIONES)</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> INGENIERO EN COMPUTACIÓN - LICENCIADO EN CIENCIAS DE LA COMPUTACIÓN</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> INGENIERO EN INFORMÁTICA/ INGENIERO EN SISTEMAS/ LICENCIADO EN TECNOLOGIA E INFORMÁTICA - LICENCIADO EN SISTEMAS</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> INGENIERO EN MECATRÓNICA</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> INGENIERO MECÁNICO</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> INGENIERO NAVAL (ORIENTACIÓN EN PRODUCCIÓN NAVAL) - (ORIENTACIÓN PROYECTO NAVAL)</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> INGENIERO NAVAL Y MECÁNICO</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> INGENIERO QUÍMICO</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> LICENCIADO - PROFESOR UNIVERSITARIO EN ED. FÍSICA</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> LICENCIADO EN CARTOGRAFÍA</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> LICENCIADO EN COMERCIO EXTERIOR</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> LICENCIADO EN COMERCIO INTERNACIONAL</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> LICENCIADO EN CS AMBIENTALES</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> LICENCIADO EN CS DE LA COMUNICACIÓN - LICENCIADO EN COMUNICACIÓN SOCIAL</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> LICENCIADO EN HIGIENE Y SEGURIDAD EN EL TRABAJO</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> LICENCIADO EN HISTORIA - PROFESOR UNIVERSITARIO DE HISTORIA</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> LICENCIADO EN RELACIONES PÚBLICAS</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-graduate"></i> LICENCIADO EN TRABAJO SOCIAL</div>
+                        <div class="span-celeste"><i class="fa-solid fa-user-nurse"></i> MÉDICO/ MÉDICO CIRUJANO/ DOCTOR EN MEDICINA</div>
+
+
+                    </div>
+
+                </section>
+
+                <section id="content3">
+                    <h4>
+                        Programas
+                    </h4>
+
+                    <div class="tabla">
+
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> ARQUITECTOS</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> BIOQUÍMICO/ LICENCIADO EN BIOQUÍMICA/ DOCTOR EN BIOQUÍMICA</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> CONTADOR PÚBLICO NACIONAL</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> FARMACÉUTICO/ LICENCIADO EN CIENCIAS FARMACÉUTICAS/ DOCTOR EN FARMACIA</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> INGENIERO AERONÁUTICO</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> INGENIERO CIVIL</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> INGENIERO ELECTRICISTA</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> INGENIERO ELECTRICISTA (ORIENTACIÓN ELECTRÓNICA)</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> INGENIERO ELECTROMECÁNICO (ORIENTACIÓN ELECTRÓNICA)</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> INGENIERO ELECTRÓNICO (ORIENTACIÓN CONTROL TELECOMUNICACIONES)</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> INGENIERO EN COMPUTACIÓN - LICENCIADO EN CIENCIAS DE LA COMPUTACIÓN</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> INGENIERO EN INFORMÁTICA/ INGENIERO EN SISTEMAS/ LICENCIADO EN TECNOLOGIA E INFORMÁTICA - LICENCIADO EN SISTEMAS</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> INGENIERO EN MECATRÓNICA</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> INGENIERO MECÁNICO</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> INGENIERO NAVAL (ORIENTACIÓN EN PRODUCCIÓN NAVAL) - (ORIENTACIÓN PROYECTO NAVAL)</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> INGENIERO NAVAL Y MECÁNICO</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> INGENIERO QUÍMICO</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> LICENCIADO - PROFESOR UNIVERSITARIO EN ED. FÍSICA</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> LICENCIADO EN CARTOGRAFÍA</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> LICENCIADO EN COMERCIO EXTERIOR</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> LICENCIADO EN COMERCIO INTERNACIONAL</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> LICENCIADO EN CS AMBIENTALES</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> LICENCIADO EN CS DE LA COMUNICACIÓN - LICENCIADO EN COMUNICACIÓN SOCIAL</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> LICENCIADO EN HIGIENE Y SEGURIDAD EN EL TRABAJO</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> LICENCIADO EN HISTORIA - PROFESOR UNIVERSITARIO DE HISTORIA</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> LICENCIADO EN RELACIONES PÚBLICAS</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> LICENCIADO EN TRABAJO SOCIAL</div>
+                        <div class="span-celeste"><i class="fa-regular fa-file-pdf"></i> MÉDICO/ MÉDICO CIRUJANO/ DOCTOR EN MEDICINA</div>
+
+
+                    </div>
+                </section>
+
+                <!--section id="content4">
+                    <p>
+                        ESPACIO VACIO
+                    </p>
+                </section-->
+
+            </article>
+
+        </div>
+    </section>
+
+
+
+    <footer>
+
+        <div class="caja__logos">
+            <img src="../img/150.png" alt="150 aniversario" class="caja__logos--img">
+            <img src="../img/armada_argentina.png" alt="Armada Argentina" class="caja__logos--img">
+            <img src="../img/min_defensa.png" alt="Ministerio de defensa" class="caja__logos--img">
+        </div>
+
+        <div class="caja__footer">
+            <div class="caja__footer--contacto">
+
+                <div class="footer__contacto--info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="contacto__info--text">
+                        <h4>UBICACION</h4>
+                        <p>Río Santiago, Provincia de Buenos Aires</p>
+                        <p>Google maps (5455+MC Ensenada)</p>
+                    </div>
+                </div>
+
+                <div class="footer__contacto--info">
+                    <i class="far fa-envelope-open"></i>
+                    <div class="contacto__info--text">
+                        <h4>EMAIL</h4>
+                        <p>ingresoescuelanaval@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="footer__contacto--info">
+                    <i class="fas fa-phone"></i>
+                    <div class="contacto__info--text">
+                        <h4>TELEFONO</h4>
+                        <p>(0221) 468-0419 (0221) 468 - 0345</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="caja__footer--copy">
+                <p>Copyright &copy; Escuela Naval Rio Santiago, Departamento de Comunicación</p>
+
+            </div>
+        </div>
+
+
+
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/337c233b98.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+@mixin portada {
+    height: 35vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        color: #fff;
+        text-align: center;
+        font-family: $font1;
+        font-size: 2.5rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+    }
+}
+
+.main__comando {
+    @include portada;
+    background-image:
+        linear-gradient(to right bottom,
+            rgba(10, 21, 31, 0.8),
+            rgba(20, 60, 105, 0.8)),
+        url('../img/comando.jpg');
+
+}
+
+.main__intendencia {
+    @include portada;
+    background-image:
+        linear-gradient(to right bottom,
+            rgba(10, 21, 31, 0.8),
+            rgba(20, 60, 105, 0.8)),
+        url('../img/intendencia2.jpg');
+
+}
+
+.main__cursos {
+    @include portada;
+    background-image:
+        linear-gradient(to right bottom,
+            rgba(10, 21, 31, 0.8),
+            rgba(20, 60, 105, 0.8)),
+        url('../img/cursos.jpg');
+
+}
+
+.caja__info {
+
+    padding-bottom: 50px;
+
+    .caja__info--intro {
+        grid-area: intro;
+        padding: 25px;
+
+        h2 {
+            font-family: $font1;
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 2.5rem;
+            color: $secundario;
+            letter-spacing: 2px;
+            padding-bottom: 25px;
+        }
+
+        strong {
+            color: $secundario
+        }
+
+        p {
+            font-family: $font2;
+            color: $primario;
+        }
+
+    }
+
+    .caja__info--galeria {
+        grid-area: galeria;
+        margin: 25px;
+        padding: 25px 0;
+        border-bottom: 2px solid $terciario;
+        border-top: 2px solid $terciario;
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 4px;
+            grid-column-start: 1;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            align-content: start;
+            min-width: 300px;
+            margin: 0 auto;
+            transition: all 150ms linear;
+
+            input[type="radio"] {
+                display: none;
+            }
+
+            label {
+                position: relative;
+                display: block;
+                padding-bottom: 60%;
+                margin: 5px;
+                cursor: pointer;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 50% 50%;
+            }
+
+            label:before {
+                border: 1px solid $secundario;
+                content: '';
+                position: absolute;
+                left: -5px;
+                right: -5px;
+                bottom: -5px;
+                top: -5px;
+            }
+
+            img {
+                display: none;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                width: 100%;
+                transition: all 150ms linear;
+            }
+
+            input[name="select"]:checked+label+img {
+                display: block;
+            }
+
+            input[name="select"]:checked+label:before {
+                border: 1px solid $terciario;
+            }
+
+            .img-tab-1 {
+                background-image: url(../img/c-1.jpg);
+            }
+
+            .img-tab-2 {
+                background-image: url(../img/c-2.jpg);
+            }
+
+            .img-tab-3 {
+                background-image: url(../img/c-3.jpg);
+            }
+
+            .img-tab-4 {
+                background-image: url(../img/cur-1.jpg);
+            }
+
+            .img-tab-5 {
+                background-image: url(../img/cur-2.jpg);
+            }
+
+            .img-tab-6 {
+                background-image: url(../img/cur-3.jpg);
+            }
+
+
+        }
+
+    }
+
+    @mixin parrafo {
+        padding: 25px;
+
+        h4 {
+            font-family: $font1;
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 2rem;
+            color: $secundario;
+            letter-spacing: 2px;
+            padding-bottom: 50px;
+        }
+
+        p {
+            font-family: $font2;
+            color: $primario;
+            text-align: justify;
+        }
+    }
+
+    .caja__info--parrafo {
+        grid-area: parrafo;
+        @include parrafo
+    }
+
+
+    .caja__info--parrafo2 {
+        grid-area: parrafo2;
+        @include parrafo
+    }
+}
+
+@media (min-width:768px) {
+    .caja__info {
+        padding: 50px 100px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "galeria intro" "parrafo parrafo" "parrafo2 parrafo2";
+    
+    .caja__info--galeria {
+        max-width: 390px;
+        min-height: 290px;
+        border-bottom: none;
+
+    }
+    }
+}
+
+@media (min-width:1200px) {
+    .caja__info {
+        padding: 50px 150px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "galeria intro" "galeria parrafo" "galeria parrafo2";
+
+        
+    }
+}
