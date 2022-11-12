@@ -1,0 +1,25 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "description": "front end design for armada argentina",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/NicoCabreraDulke/Pre-Entrega3.git"
+  },
+  "keywords": [
+    "escuela",
+    "naval",
+    "armada",
+    "argentina"
+  ],
+  "author": "nicolas cabrera dulke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicoCabreraDulke/Pre-Entrega3/issues"
+  },
+  "homepage": "https://github.com/NicoCabreraDulke/Pre-Entrega3#readme"
+}
