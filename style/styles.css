@@ -200,16 +200,17 @@ span:nth-child(2) {
     filter: blur(0);
   }
 }
-main {
-  height: 100vh;
+main .caja__main {
+  height: 100%;
   background-image: linear-gradient(to right bottom, rgba(10, 21, 31, 0.8), rgba(20, 60, 105, 0.8)), url("../img/cadetes2.jpg");
   background-size: cover;
   background-position: top;
-  position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  padding: 25px;
+  padding-bottom: 100px;
 }
-main .titulo__main h1 {
+main .caja__main .titulo__main h1 {
   color: #fff;
   text-align: center;
   font-family: "Fjalla One", sans-serif;
@@ -226,7 +227,7 @@ main .titulo__main h1 {
   -webkit-animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
           animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
-main .tarjetas__ingreso {
+main .caja__main .tarjetas__ingreso {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -234,17 +235,17 @@ main .tarjetas__ingreso {
   align-items: center;
   margin: auto 0;
 }
-main .tarjetas__ingreso .card-cadete {
+main .caja__main .tarjetas__ingreso .card-cadete {
   margin-top: 15px;
 }
-main .tarjetas__ingreso .card {
+main .caja__main .tarjetas__ingreso .card {
   width: 100%;
   border-radius: 15px;
   padding: 10px;
   color: #143c69;
 }
-main .tarjetas__ingreso .card .btn,
-main .tarjetas__ingreso .card .btn-primary {
+main .caja__main .tarjetas__ingreso .card .btn,
+main .caja__main .tarjetas__ingreso .card .btn-primary {
   border: none;
   color: #fff;
   border-radius: 5px;
@@ -253,17 +254,17 @@ main .tarjetas__ingreso .card .btn-primary {
   text-transform: uppercase;
   font-size: 11pt;
 }
-main .tarjetas__ingreso .card h2 {
+main .caja__main .tarjetas__ingreso .card h2 {
   font-family: "Fjalla One", sans-serif;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
 }
-main .tarjetas__ingreso .card h2 i {
+main .caja__main .tarjetas__ingreso .card h2 i {
   color: #1b94cc;
   font-size: 20px;
 }
-main .tarjetas__ingreso .card .positivo {
+main .caja__main .tarjetas__ingreso .card .positivo {
   color: #143c69;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -271,11 +272,11 @@ main .tarjetas__ingreso .card .positivo {
   font-size: 14px;
   letter-spacing: 2px;
 }
-main .tarjetas__ingreso .card .positivo i {
+main .caja__main .tarjetas__ingreso .card .positivo i {
   font-size: 16px;
   color: #143c69;
 }
-main .tarjetas__ingreso .card .negativo {
+main .caja__main .tarjetas__ingreso .card .negativo {
   color: darkgrey;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -283,17 +284,17 @@ main .tarjetas__ingreso .card .negativo {
   font-size: 14px;
   letter-spacing: 2px;
 }
-main .tarjetas__ingreso .card .negativo i {
+main .caja__main .tarjetas__ingreso .card .negativo i {
   font-size: 16px;
   color: darkgrey;
 }
-main .redes {
+main .caja__main .redes {
   display: flex;
   justify-content: center;
   align-items: center;
   height: auto;
 }
-main .redes .boton__redes {
+main .caja__main .redes .boton__redes {
   width: 50px;
   height: 50px;
   line-height: 45px;
@@ -306,7 +307,7 @@ main .redes .boton__redes {
   border-radius: 50%;
   transition: 550ms ease;
 }
-main .redes .boton__redes:hover {
+main .caja__main .redes .boton__redes:hover {
   background-color: #0a151f;
   width: 55px;
   height: 55px;
@@ -315,37 +316,29 @@ main .redes .boton__redes:hover {
 }
 
 /** MAIN RESPONSIVE **/
-@media (min-width: 576px) {
-  main {
-    height: 85vh;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  }
-}
 @media (min-width: 768px) {
-  main {
-    height: 70vh;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+  main .caja__main {
     background-image: linear-gradient(to right bottom, rgba(10, 21, 31, 0.8), rgba(20, 60, 105, 0.8)), url("../img/cadetes2-desktop.jpg");
   }
 }
 @media (min-width: 1200px) {
-  main {
-    padding: 100px 200px;
-    padding-top: 40px;
+  main .caja__main {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-areas: "titulo titulo titulo" "ingreso . redes";
-    padding: 50px 100px;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-areas: ". titulo titulo ." ". ingreso redes .";
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    align-items: center;
+    padding-bottom: 150px;
   }
-  main .titulo__main {
+  main .caja__main .titulo__main {
     grid-area: titulo;
   }
-  main .tarjetas__ingreso {
+  main .caja__main .tarjetas__ingreso {
     grid-area: ingreso;
+    padding: 10px;
   }
-  main .redes {
+  main .caja__main .redes {
     grid-area: redes;
     flex-direction: column;
   }
@@ -539,7 +532,7 @@ main .redes .boton__redes:hover {
     margin: 50px 50px;
   }
   .section__secundaria .about__us {
-    min-height: 800px;
+    min-height: 650px;
     grid-area: nosotros;
   }
   .section__secundaria .section__testimonio {
@@ -945,6 +938,15 @@ footer .caja__footer .caja__footer--copy {
 }
 .caja__info .caja__info--galeria .gallery .img-tab-6 {
   background-image: url(../img/cur-3.jpg);
+}
+.caja__info .caja__info--galeria .gallery .img-tab-7 {
+  background-image: url(../img/i-1.jpg);
+}
+.caja__info .caja__info--galeria .gallery .img-tab-8 {
+  background-image: url(../img/i-2.jpg);
+}
+.caja__info .caja__info--galeria .gallery .img-tab-9 {
+  background-image: url(../img/i-3.jpg);
 }
 .caja__info .caja__info--parrafo {
   grid-area: parrafo;
